@@ -1,38 +1,558 @@
-.App {
-  text-align: center;
+.logo_bg{
+    background: linear-gradient(to right, #EF5B23, #EB0C77);
+    position: relative;
+    z-index: 2;
+}
+.logo_bgc{
+    background: linear-gradient(to right, #EF5B23, #EB0C77);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo_div{
+    margin-top: 20px;
+    background: linear-gradient(to right, #ed3849, #ed3051);
+    padding: 6px;
+    border-radius: 50%;        
+}
+.bg_slate{
+    background-color: #F5F5F5;
+}
+.challenge{    
+    background-color: #F5F5F5;
+    position: relative;
+    z-index: 1;
+}
+.font_color{
+    color: #EB0C77;
+}
+.span_color{
+    color: #8AC640;
+}
+.reg_btn{
+    background: linear-gradient(to right, #EB0C77, #EF5B23);
+    color: #fff;
+}
+.time_div{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    background-color: #fff;
+}
+/* .days{
+    font-size: 13px;
+    margin-left: 5px;
+} */
+.card_exe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.time{
+    border: 1px solid #EB0C77;
+    
+}
+.duration{
+    border: 1px solid #8AC640;
+}
+.speakers{
+    border: 1px solid #EF5B23;
+}
+.goal{
+    border: 1px solid #EB0C77;
+}
+.exercise_time{
+    width: 80px;
+    background-color: #FFE8F3;
+    border-radius: 50%;
+    padding: 5px;
+}
+.exercise_duration{
+    width: 80px;
+    background-color: #EEFFDA;
+    border-radius: 50%;
+    padding: 5px;
+}
+.exercise_speakers{
+    width: 80px;
+    background-color: #FFE8F3;
+    border-radius: 50%;
+    padding: 5px;
+}
+.exercise_goal{
+    width: 80px;
+    background-color: #FFE8F3;
+    border-radius: 50%;
+    padding: 5px;
+}
+.exercise{
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+.time_p{
+    margin-top: 15px;
+
+}
+.cover{
+    background-color: #fff;
+    border-radius: 20px;
+}
+.cover_heading{
+    background-image: linear-gradient(to right, #EB0C77, #EF5B23);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    font-weight: 500;
+    border-bottom: 3px solid #EB0C77;
+    width: 100px;
+}
+/* .cover_img{
+    height: 180px;
+    width: 180px;
+} */
+.cover_heading_p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cover_heading_text{
+    color: #4F4B4B;
+}
+.image_desc{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4F4B4B;
+
+}
+.benefits{
+    background-color: black;
+}
+.register_heading{
+    color: #fff;
+}
+.take_challange{
+    color: #fff;
+}
+.benefit_card{
+    background-image: linear-gradient(to right, #f76b38, #ea2785);
+    border-radius: 20px;
+    padding: 8px;
+}
+.benefit_card_content{
+    background: linear-gradient(to right, #EF5B23, #EB0C77);
+    border-radius: 20px;
+}
+.card_image{
+    padding: 8px;
+}
+.benefit_img{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+.card_text{
+    color: white;
+    font-size: 25px;
+}
+.card_img_one{
+    background-image: url(./Images/habit1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.habit_card_one{
+    border: 1px solid #CACACA;
+    background-color: #FFE8F3;
+    margin-bottom: 30px;
+}
+.habit_heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+.heading_one{
+    color: #EB0C77;
+}
+.habit_desc{
+    font-size: 20px;
+}
+.card_img_two{
+    background-image: url(./Images/habit2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.habit_card_two{
+    border: 1px solid #CACACA;
+    background-color: #EEFFDA;
+    margin-bottom: 30px;
+}
+.heading_two{
+    color: #8AC640;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card_img_three{
+    background-image: url(./Images/habit3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.habit_card_three{
+    border: 1px solid #CACACA;
+    background-color: #FFE3D8;
+    margin-bottom: 30px;
+}
+.heading_three{
+    color: #EF5B23;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card_img_four{
+    background-image: url(./Images/habit4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.habit_card_four{
+    border: 1px solid #CACACA;
+    background-color: #FFE8F3;
+    margin-bottom: 30px;
+}
+.heading_four{
+    color: #EB0C77;
 }
 
-.App-link {
-  color: #61dafb;
+.card_img_five{
+    background-image: url(./Images/habit5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.habit_card_five{
+    border: 1px solid #CACACA;
+    background-color: #EEFFDA;
+    margin-bottom: 30px;
+}
+.heading_five{
+    color: #8AC640;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_img_six{
+    background-image: url(./Images/habit6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.habit_card_six{
+    border: 1px solid #CACACA;
+    background-color: #FFE3D8;
+    margin-bottom: 30px;
+}
+.heading_six{
+    color: #EF5B23;
+}
+
+.card_img_seven{
+    background-image: url(./Images/habit7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.habit_card_seven{
+    border: 1px solid #CACACA;
+    background-color: #FFE8F3;
+    margin-bottom: 30px;
+}
+.heading_seven{
+    color: #EB0C77;
+}
+.testimonial_container{
+    margin-top: -109px;
+}
+.testimonial_header{
+    background-color: #FFE2D7;
+    height: 330px;
+}
+.testimonial_comma_svg{
+    display: flex;
+    justify-content: end;
+    margin-top: -25px;
+}
+.card_image_div{
+    margin-left: -60px;
+}
+.testimonial_heading{
+    /* font-size: 40px; */
+    font-weight: 600;
+    color: #EF5B23;
+}
+.testimonial_client{
+    color: #4F4B4B;
+    /* font-size: 18px; */
+}
+.testimonial_card{
+    border: 1px solid #4F4B4B;
+    background-color: #fff;
+}
+
+
+
+.programme_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.programme_for{
+    font-size: 35px;
+    color: #8AC640;
+    font-weight: 600;
+}
+.prog_img{
+    height: 150px;
+    width: 300px;
+}
+.professional_card{
+    background-color: #F5FFFF;
+    border: 2px solid #34AEF2;
+    border-radius: 20px;
+
+}
+.professional_heading_p{
+    color: #34AEF2;
+    font-size: 20px;
+    font-weight: 600;
+}
+.housewife_card{
+    background-color: #FFE8F3;
+    border: 2px solid #EB0C77;
+    border-radius: 15px;
+
+}
+.housewife_heading_p{
+    color: #EB0C77;
+    font-size: 20px;
+    font-weight: 600;
+}
+.student_card{
+    background-color: #F9F5FF;
+    border: 2px solid #9747FF;
+    border-radius: 15px;
+
+}
+.student_heading_p{
+    color: #9747FF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.parent_card{
+    background-color: #EEFFDA;
+    border: 2px solid #8AC640;
+    border-radius: 15px;
+
+}
+.parent_heading_p{
+    color: #8AC640;
+    font-size: 20px;
+    font-weight: 600;
+}
+.youth_card{
+    background-color: #FFEDED;
+    border: 2px solid #FF0000;
+    border-radius: 15px;
+
+}
+.youth_heading_p{
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.spiritual_card{
+    background-color: #EDFFF7;
+    border: 2px solid #3C8764;
+    border-radius: 15px;
+
+}
+.spiritual_heading_p{
+    color: #3C8764;
+    font-size: 20px;
+    font-weight: 600;
+}
+.programme_not_for_card{
+    border: #3B3B3B;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+.programme_not_for{
+    font-size: 35px;
+    color: #AD0E0E;
+    font-weight: 600;
+}
+.Programme_not_p{
+    font-size: 16px;
+}
+.prog_not_img{
+    height: 100px;
+    width: 80px;
+}
+.programme_not_text{
+    font-size: 18px;
+    font-weight: 600;
+}
+.question_arrow{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq-question{
+    font-size: 20px;
+    font-weight: 600;
+}
+.faq_heading{
+    font-size: 50px;
+    font-weight: 700;
+}
+.faq_qna{
+    border-bottom: 1px solid #666666;
+    margin-bottom: 10px;
+}
+.about_container{
+    background: linear-gradient(to right, #EF5B23, #EB0C77);
+}
+.about_heading{
+    font-size: 40px;
+    color: #fff;
+}
+.about_div{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+.about_card_one{
+    background-image: url('./Images/vivek.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    /* height: 500px;
+    width: 300px; */
+}
+.about_card_two{
+    background-image: url('./Images/neeraj.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    /* height: 500px; */
+    /* width: 300px; */
+}
+.about_card_three{
+    background-image: url('./Images/charu.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+.about_card_four{
+    background-image: url('./Images/niti.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+.about_card_five{
+    background-image: url('./Images/meenakshi.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+.about_card_six{
+    background-image: url('./Images/manisha.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+.about_card_seven{
+    background-image: url('./Images/mukund.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+.about_containt{
+    background: linear-gradient(to bottom, #fbfafa00  50%, #060606 90%);
+    border-radius: 20px;
+}
+.about_name{
+    color: #fff;
+    font-size: 20px;
+}
+.about_desc{
+    color: #fff;
+}
+.health_challange_div{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+    border-radius: 20px;    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    z-index: 0;
+}
+.health_challenge{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #3F8A5F;
+}
+.gut_icon{
+    height: 20px;
+}
+.icon_date{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 0px;
+    color: #1A6C99;
+}
+.line_imgs{
+    width: 80px;
+}
+.faq-question{
+    font-size: 16px;
+}
+
+
+
+
+.register_form_div{
+    position: relative;
+    z-index: 1;
+}
+.register_heading{
+    font-size: 35px;
+    font-weight: bold;
+}
+.input_div{
+    border: 1px solid gray;
+    border-radius: 50px;
+    height: 30px;
+}
+.name_tag{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 10px;
+    margin: 2px;
+    border-radius: 50px;
 }
