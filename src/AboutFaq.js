@@ -144,7 +144,7 @@ const AboutFaq = () => {
           <div className=' w-full'>
             <img className='qna_image h-96 rounded w-full' alt='qna' src={qna} />
           </div>
-          <div className='w-full mt-5 md:mt-0  md:mx-5'>
+          <div className='w-full mt-5 '>
             <ul className="faq-list">
               {faqData.map((faqItem, index) => (
                 <li className='faq_qna' key={faqItem._id}>

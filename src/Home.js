@@ -297,70 +297,70 @@ const Home = () => {
                         <div className='habit_card_container mx-8 pb-10'>
                             <div className='habit_card_one flex flex-col md:flex-row'>
                                 <div className='card_img_one md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
-                                    <p className=' absolute sm:text-3xl lg:text-4xl ms-52 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>1.</span> </p>
-                                    <img className='flex mt-20 md:mt-0 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32  ms-48 md:ms-2' alt='habit' src={habitsvg1} />
+                                    <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>1.</span> </p>
+                                    <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg1} />
                                 </div>
-                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 ml-20 lg:ml-28 flex-none md:w-1/2'>
+                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_one'>Cleansing</p>
                                     <p className='habit_desc'>Experience the two most practical ways of detoxifying your body everyday</p>
                                 </div>
                             </div>
                             <div className='habit_card_two flex flex-col md:flex-row'>
                                 <div className='card_img_two md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
-                                    <p className=' absolute sm:text-3xl lg:text-4xl ms-52 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>2.</span> </p>
-                                    <img className='flex mt-20 md:mt-0 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32  ms-48 md:ms-2' alt='habit' src={habitsvg2} />
+                                    <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>2.</span> </p>
+                                    <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg2} />
                                 </div>
-                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 ml-20 lg:ml-28 flex-none md:w-1/2'>
+                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_two'>Food</p>
                                     <p className='habit_desc'>Understand what food the human body is designed to eat</p>
                                 </div>
                             </div>
                             <div className='habit_card_three flex flex-col md:flex-row'>
                                 <div className='card_img_three md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
-                                    <p className=' absolute sm:text-3xl lg:text-4xl ms-52 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>3.</span> </p>
-                                    <img className='flex mt-20 md:mt-0 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32  ms-48 md:ms-2' alt='habit' src={habitsvg3} />
+                                    <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>3.</span> </p>
+                                    <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg3} />
                                 </div>
-                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 ml-20 lg:ml-28 flex-none md:w-1/2'>
+                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_three'>Sleep</p>
                                     <p className='habit_desc'>Learn practice tips as to how you can deepen your sleep</p>
                                 </div>
                             </div>
                             <div className='habit_card_four flex flex-col md:flex-row'>
                                 <div className='card_img_four md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
-                                    <p className=' absolute sm:text-3xl lg:text-4xl ms-52 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>4.</span> </p>
-                                    <img className='flex mt-20 md:mt-0 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32  ms-48 md:ms-2' alt='habit' src={habitsvg4} />
+                                    <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>4.</span> </p>
+                                    <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg4} />
                                 </div>
-                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 ml-20 lg:ml-28 flex-none md:w-1/2'>
+                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_four'>Movement</p>
                                     <p className='habit_desc'>Build a consistent exercise routine that you can actually follow.</p>
                                 </div>
                             </div>
                             <div className='habit_card_five flex flex-col md:flex-row'>
                                 <div className='card_img_five md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
-                                    <p className=' absolute sm:text-3xl lg:text-4xl ms-52 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>5.</span> </p>
-                                    <img className='flex mt-20 md:mt-0 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32  ms-48 md:ms-2' alt='habit' src={habitsvg5} />
+                                    <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>5.</span> </p>
+                                    <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg5} />
                                 </div>
-                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 ml-20 lg:ml-28 flex-none md:w-1/2'>
+                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_five'>Relationships</p>
                                     <p className='habit_desc'>Learn how to improve your existing relationships and fix the strained ones.</p>
                                 </div>
                             </div>
                             <div className='habit_card_six flex flex-col md:flex-row'>
                                 <div className='card_img_six md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
-                                    <p className=' absolute sm:text-3xl lg:text-4xl ms-52 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>6.</span> </p>
-                                    <img className='flex mt-20 md:mt-0 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32  ms-48 md:ms-2' alt='habit' src={habitsvg6} />
+                                    <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>6.</span> </p>
+                                    <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg6} />
                                 </div>
-                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 ml-20 lg:ml-28 flex-none md:w-1/2'>
+                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_six'>Purpose</p>
                                     <p className='habit_desc'>We are all sent to this Earth with an intention. Find out yours!</p>
                                 </div>
                             </div>
                             <div className='habit_card_seven flex flex-col md:flex-row'>
-                                <div className='card_img_seven md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
-                                    <p className=' absolute sm:text-3xl lg:text-4xl ms-52 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>7.</span> </p>
-                                    <img className='flex mt-20 md:mt-0 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32  ms-48 md:ms-2' alt='habit' src={habitsvg7} />
+                                <div className='card_img_seven md:flex justify-center md:flex-col md:relative text-center md:w-1/3 h-48'>
+                                    <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>7.</span> </p>
+                                    <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute  md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg7} />
                                 </div>
-                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 ml-20 lg:ml-28 flex-none md:w-1/2'>
+                                <div className='card_habit_content my-auto pt-16 pb-5 md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_seven'>Surprise</p>
                                     <p className='habit_desc'>Join the challenge to know more.</p>
                                 </div>
