@@ -696,14 +696,3 @@
     border-radius: 50px;
 }
 
-.razorpay-payment-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.razorpay-payment-button.svelte-ohbfj8 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
