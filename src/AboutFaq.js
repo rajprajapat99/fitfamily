@@ -1,5 +1,13 @@
-import React, { useState } from 'react'
+import React, {useRef, useEffect, useState } from 'react'
 import qna from './Images/qna.jpg'
+import vivek from './Images/vivek.jpg'
+import neeraj from './Images/neeraj.jpg'
+import gurpreet from './Images/gurpreet.jpg'
+import niti from './Images/niti.jpg'
+import meenakshi from './Images/meenakshi.jpg'
+import manisha from './Images/manisha.jpg'
+import mukund from './Images/mukund.jpg'
+import bikramjit from './Images/bikramjit.jpg'
 
 const AboutFaq = () => {
   const [openQuestion, setOpenQuestion] = useState(0);
@@ -15,6 +23,32 @@ const AboutFaq = () => {
       setOpenQuestion(index);
     }
   };
+
+  const containerRefs = useRef([]);
+
+  useEffect(() => {
+    // Add event listeners for mousewheel to all containers
+    containerRefs.current.forEach(container => {
+      container.addEventListener('mousewheel', handleScroll);
+    });
+
+    return () => {
+      // Cleanup: Remove event listeners when component unmounts
+      containerRefs.current.forEach(container => {
+        container.removeEventListener('mousewheel', handleScroll);
+      });
+    };
+  }, []);
+
+  const handleScroll = (event) => {
+    const deltaY = event.deltaY; // Get the vertical scroll amount
+    const container = event.currentTarget;
+
+    // Adjust the scrollTop of the container based on the scroll direction
+    container.scrollTop += deltaY;
+  };
+
+   
 
   const faqData = [
     {
@@ -57,6 +91,48 @@ const AboutFaq = () => {
       question: "What if I miss any session?",
       answer: "Please do not worry, if you miss any session, you can continue from the next session. We share detailed notes for each session on our dashboard, you can study them and stay up to date."
     }
+  ];
+  const aboutData = [
+    {
+      image: vivek,
+      name: 'Vivek Jain',
+      desc: 'Certified Nutrition and Wellness Advisor, Internationally Accredited Diploma in Weight-Loss, Diploma in Nutrition, Diploma in Dietary Supplement Advisor'
+    },
+    {
+      image: neeraj,
+      name: 'Neeraj Bhatia',
+      desc: ' Certified Nutrition and Wellness Advisor-Diploma in Nutrition, Diploma in Diet Planning, Diploma in Weight Loss, Diploma in Fitness, Diploma in Sports Nutrition, Diploma in Keto Dietary Advisor, Diploma in Intermittent Fasting, Diploma in Dietary Supplement Advisor'
+    },
+    {
+      image: gurpreet,
+      name: 'Senior Coach Gurpreet',
+      desc: 'Certified Nutrition Advisor, Diploma in Weight loss.'
+    },
+    {
+      image: niti,
+      name: 'Senior Coach Niti',
+      desc: 'Masters in Child Development & Nutrition, Certified Nutrition & Wellness Advisior, Diploma in Nutrition Diploma in Weightloss, Diploma in Gut health, Diploma in Dietary Supplement Advisor'
+    },
+    {
+      image: meenakshi,
+      name: 'Senior Coach Meenakshi',
+      desc: 'Certified Yoga Instructor by Ministry of Ayush, Diploma in Weight loss, Certified wellness & Nutrition Advisor, Diploma in Intermittent Fasting, Diploma in Dietary Supplement Advisor'
+    },
+    {
+      image: manisha,
+      name: 'Senior Coach Manisha',
+      desc: 'Diploma in Nutrition, Certified Wellness and Nutrition advisor, International Accredited Diploma in Yoga Training, Diploma in Weight loss'
+    },
+    {
+      image: mukund,
+      name: 'Senior Coach Mukund',
+      desc: 'An ex army officer, a trained Commando from Indian Army, Certified Internationally Accredited Diploma in Sports Nutrition, Diploma in Nutrition, Certified Wellness and Nutrition advisor, Diploma in Weight loss'
+    },
+    {
+      image: bikramjit,
+      name: 'Senior Coach Bikramjit Singh',
+      desc: 'Diploma in Weight loss, Certified Wellness & Nutrition Advisor'
+    },
   ];
   return (
     <>
@@ -101,89 +177,18 @@ const AboutFaq = () => {
           </center>
         </div>
           <div className='grid grid-cols-1 mx-16 md:grid-cols-2 lg:grid-cols-3 gap-5 -mt-48  w-3/5'>
-            <div className='about_div'>
-              <div className='about_card_one h-96'>
-                <div className='about_containt h-full text-center relative'>
+          {aboutData.map((coach, index) => (
+            <div className='about_div' key={index}>
+              <div className={`about_card h-96`} style={{backgroundImage: `url(${coach.image})`}}>
+                <div className='about_containt h-full text-center relative' ref={el => containerRefs.current[index] = el}>
                   <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Vivek Jain</p>
-                    <p className='about_desc'> Certified Nutrition and Wellness Advisor, Internationally Accredited Diploma in Weight-Loss, Diploma in Nutrition, Diploma in Dietary Supplement Advisor </p>
+                    <p className='about_name'>{coach.name}</p>
+                    <p className='about_desc'>{coach.desc}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='about_div'>
-              <div className='about_card_two h-96'>
-                <div className='about_containt h-full text-center relative'>
-                  <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>NEERAJ BHATIA</p>
-                    <p className='about_desc'> Certified Nutrition and Wellness Advisor-Diploma in Nutrition, Diploma in Diet Planning, Diploma in Weight Loss, Diploma in Fitness, Diploma in Sports Nutrition, Diploma in Keto Dietary Advisor, Diploma in Intermittent Fasting, Diploma in Dietary Supplement Advisor</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='about_div'>
-              <div className='about_card_three h-96'>
-                <div className='about_containt h-full text-center relative'>
-                  <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Gurpreet</p>
-                    <p className='about_desc'>Certified Nutrition Advisor, Diploma in Weight loss.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='about_div'>
-              <div className='about_card_four h-96'>
-                <div className='about_containt h-full text-center relative'>
-                  <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Niti</p>
-                    <p className='about_desc'> Masters in Child Development & Nutrition, Certified Nutrition & Wellness Advisior, Diploma in Nutrition Diploma in Weightloss, Diploma in Gut health, Diploma in Dietary Supplement Advisor </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='about_div'>
-              <div className='about_card_five h-96'>
-                <div className='about_containt h-full text-center relative'>
-                  <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Meenakshi</p>
-                    <p className='about_desc'>Certified Yoga Instructor by Ministry of Ayush, Diploma in Weight loss, Certified wellness & Nutrition Advisor, Diploma in Intermittent Fasting, Diploma in Dietary Supplement Advisor</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='about_div'>
-              <div className='about_card_six h-96'>
-                <div className='about_containt h-full text-center relative'>
-                  <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Manisha</p>
-                    <p className='about_desc'>Diploma in Nutrition, Certified Wellness and Nutrition advisor, International Accredited Diploma in Yoga Training, Diploma in Weight loss</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='about_div'>
-              <div className='about_card_seven h-96'>
-                <div className='about_containt h-full text-center relative'>
-                  <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Mukund</p>
-                    <p className='about_desc'>An ex army officer, a trained Commando from Indian Army, Certified Internationally Accredited Diploma in Sports Nutrition, Diploma in Nutrition, Certified Wellness and Nutrition advisor, Diploma in Weight loss</p>
-                    <svg className={`w-6 h-6 transition-transform transform ${showContent ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='about_div'>
-              <div className='about_card_eight h-96'>
-                <div className='about_containt h-full text-center relative'>
-                  <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Bikramjit Singh</p>
-                    <p className='about_desc'>Diploma in Weight loss, Certified Wellness & Nutrition Advisor</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          ))}
           </div>
         </div>
     </>

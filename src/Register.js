@@ -39,7 +39,7 @@ const Register = () => {
         };
         axios.post('https://sheet.best/api/sheets/1e4d70a4-7176-4eae-bb2c-6c9ada019d7b', data)
             .then((response) => {
-                console.log(response);
+                console.log(response.data);
                 setName('');
                 setEmail('');
                 setWhatsapp('');
