@@ -55,6 +55,20 @@ const Register = () => {
             });
     }
 
+
+    useEffect(() => {
+        // Function to get the current time in HH:MM format
+        const getCurrentTime = () => {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            return `${hours}:${minutes}`;
+        };
+
+        // Set the current time as the default value for the "To" input field
+        setToTime(getCurrentTime());
+        setFromTime(getCurrentTime());
+    }, []);
     // const payNow = () => {
     //     const script = document.createElement('script');
     //     script.src = 'https://checkout.razorpay.com/v1/payment-button.js';
@@ -69,7 +83,7 @@ const Register = () => {
 
     return (
         <>
-            <div className='register_form_div cover px-16 mt-24 mx-2 pt-10' id='formregister'>
+            <div className='register_form_div cover px-16 mt-24 mx-8 pt-10' id='formregister'>
 
                 {showAlert && (
                     <div className="alert new_add_alert alert-dismissible fade show" role="alert">
@@ -87,7 +101,7 @@ const Register = () => {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="text-gray-900 text-sm rounded-3xl p-2.5 dark:placeholder-gray-400 w-2/3"
+                                    className="text-gray-900 text-xl rounded-3xl p-2.5 dark:placeholder-gray-400 w-full mr-2"
                                     placeholder="Enter Your Full Name Here..."
                                     required
                                     onChange={(e) => setName(e.target.value)}
@@ -95,7 +109,7 @@ const Register = () => {
                             </div>
                             <div className="mb-5 input_div flex  w-4/5">
                                 <div className='name_tag'>Email Id*</div>
-                                <input type="email" id="email" className=" text-gray-900 text-sm w-4/5  rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Enter Your Email Address Here..." required onChange={(e) => setEmail(e.target.value)}
+                                <input type="email" id="email" className=" text-xl text-gray-900  w-full mr-2  rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Enter Your Email Address Here..." required onChange={(e) => setEmail(e.target.value)}
                                     value={email} />
                             </div>
                             <div className="mb-5 input_div flex w-4/5">
@@ -103,7 +117,7 @@ const Register = () => {
                                 <input
                                     type="text"
                                     id="whatsapp"
-                                    className="text-gray-900 text-sm w-2/3 rounded-3xl p-2.5 dark:placeholder-gray-400"
+                                    className="text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400"
                                     placeholder="Enter 10-digit Number Here..."
                                     pattern="[0-9]{10}"
                                     title="Please enter a 10-digit number"
@@ -119,28 +133,28 @@ const Register = () => {
 
                             <div className="mb-5 input_div flex  w-4/5">
                                 <div className='name_tag'>Your City*</div>
-                                <input type="text" id="city" className=" text-gray-900 text-sm w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Jaipur, Rajasthan, India" required onChange={(e) => setCity(e.target.value)}
+                                <input type="text" id="city" className=" text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Jaipur, Rajasthan, India" required onChange={(e) => setCity(e.target.value)}
                                     value={city} />
                             </div>
                         </div>
                         <div className='time_choose_div flex grid-cols-3 gap-5 mr-28'>
-                            <div className='choose_time w-full'>Choose Your Time Slot:</div>
+                            <div className='choose_time text-xl w-full'>Choose Your Time Slot:</div>
                             <div className="mb-5 input_div flex w-full">
                                 <div className='name_tag'>From:</div>
-                                <input type="time" id="fromTime" className=" text-gray-900 text-sm w-full  rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Enter Your Full Name Here.." required onChange={(e) => setFromTime(e.target.value)}
+                                <input type="time" id="fromTime" className=" text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " required onChange={(e) => setFromTime(e.target.value)}
                                     value={fromTime} />
                             </div>
                             <div className="mb-5 input_div flex w-full">
                                 <div className='name_tag'>To:</div>
-                                <input type="time" id="toTime" className=" text-gray-900 text-sm w-full  rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Enter Your Full Name Here.." required onChange={(e) => setToTime(e.target.value)}
+                                <input type="time" id="toTime" className=" text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " required onChange={(e) => setToTime(e.target.value)}
                                     value={toTime} />
                             </div>
                         </div>
-                        <div className="flex items-start mb-5">
+                        <div className="flex justify-center items-center mt-5">
                             <div className="flex items-center h-5">
                                 <input id="terms" onChange={handleCheckboxChange} type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                             </div>
-                            <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+                            <label htmlFor="terms" className="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
                         </div>
                     </form>
 

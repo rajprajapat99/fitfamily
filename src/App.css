@@ -160,13 +160,13 @@
     color: #fff;
 }
 .register_now_heading{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     padding-bottom: 20px;
 }
 .new_add_alert {
     position: fixed;
-    top: 85%;
+    top: 70%;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -687,12 +687,10 @@
 .name_tag {
     background-color: black;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 10px;
-    font-size: 12px;
-    margin: 2px;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    font-size: 18px;
+    margin: 4px;
     border-radius: 50px;
 }
-
