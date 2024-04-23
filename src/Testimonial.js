@@ -55,7 +55,7 @@ const Testimonial = () => {
                 </div>
             </div>
             <div className='testimonial_container  w-3/5'>
-                <div className="mx-16">
+                <div className="mx-8">
                     <Slider {...settings}>
                         <div className="px-10 mx-5">
                             <div className="testimonial_card h-96">

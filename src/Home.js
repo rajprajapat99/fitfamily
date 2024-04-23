@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import logo from './Images/logo.svg'
 import gutVideo from './Images/GutReset IntroVideo.mp4'
 import time from './Images/TIME.svg'
@@ -30,9 +30,36 @@ import Register from './Register'
 import Testimonial from './Testimonial'
 import Programme from './Programme'
 import AboutFaq from './AboutFaq'
-import { toast } from 'react-toastify'
 
 const Home = () => {
+
+    const calculateRemainingTime = (targetDate) => {
+        const now = new Date();
+        const timeDifference = targetDate.getTime() - now.getTime();
+
+        const remainingDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const remainingHours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const remainingMinutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const remainingSeconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        return {
+            days: remainingDays,
+            hours: remainingHours,
+            minutes: remainingMinutes,
+            seconds: remainingSeconds
+        };
+    };
+
+    const targetDate = new Date('2024-04-26T23:59:59');
+    const [remainingTime, setRemainingTime] = useState(calculateRemainingTime(targetDate));
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            const timeRemaining = calculateRemainingTime(targetDate);
+            setRemainingTime(timeRemaining);
+        }, 1000);
+        return () => clearInterval(intervalId);
+    }, []);
     
     return (
         <>
@@ -51,19 +78,19 @@ const Home = () => {
                                 <p className=' text-2xl font-semibold'>Challenge starting in</p>
                                 <div className='grid grid-cols-6'>
                                     <div className='flex-col'>
-                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14  mt-5 rounded'>30</div>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.days}</div>
                                         <p className='ml-3 text-sm'>Days</p>
                                     </div>
                                     <div className='flex-col'>
-                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14  mt-5 rounded'>30</div>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.hours}</div>
                                         <p className='ml-3 text-sm'>Hours</p>
                                     </div>
                                     <div className='flex-col'>
-                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14  mt-5 rounded'>30</div>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.minutes}</div>
                                         <p className='ml-3 text-sm'>Mins</p>
                                     </div>
                                     <div className='flex-col'>
-                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14  mt-5 rounded'>30</div>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.seconds}</div>
                                         <p className='ml-3 text-sm'>Secs</p>
                                     </div>
                                 </div>
@@ -200,7 +227,7 @@ const Home = () => {
                             <p className=' text-white text-2xl sm:text-3xl lg:text-4xl my-5'>Benefits You Will Gain</p>
                             <p className='text-white text-xl sm:text-2xl lg:text-2xl mb-5'>By Taking This Challange</p>
                         </center>
-                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-2/3'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-2/3'>
                             <div className='benefit_card w-full'>
                                 <div className='benefit_card_content'>
                                     <div className='card_image'>

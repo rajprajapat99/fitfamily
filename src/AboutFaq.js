@@ -3,6 +3,11 @@ import qna from './Images/qna.jpg'
 
 const AboutFaq = () => {
   const [openQuestion, setOpenQuestion] = useState(0);
+  const [showContent, setShowContent] = useState(false);
+
+  const toggleContent = () => {
+      setShowContent(!showContent);
+  };
   const toggleQuestion = (index) => {
     if (openQuestion === index) {
       setOpenQuestion(0);
@@ -95,13 +100,13 @@ const AboutFaq = () => {
             <p className='about_heading'>About The Hosts</p>
           </center>
         </div>
-          <div className='grid grid-cols-1 mx-16 sm:grid-cols-2 md:grid-cols-3 gap-5 -mt-48  w-3/5'>
+          <div className='grid grid-cols-1 mx-16 md:grid-cols-2 lg:grid-cols-3 gap-5 -mt-48  w-3/5'>
             <div className='about_div'>
               <div className='about_card_one h-96'>
                 <div className='about_containt h-full text-center relative'>
                   <div className='about_text_p absolute bottom-6'>
                     <p className='about_name mx-auto'>Vivek Jain</p>
-                    <p className='about_desc'>Ravi is an acclained health educator, published author and co-founder of the health education platform Satvic</p>
+                    <p className='about_desc'> Certified Nutrition and Wellness Advisor, Internationally Accredited Diploma in Weight-Loss, Diploma in Nutrition, Diploma in Dietary Supplement Advisor </p>
                   </div>
                 </div>
               </div>
@@ -111,7 +116,7 @@ const AboutFaq = () => {
                 <div className='about_containt h-full text-center relative'>
                   <div className='about_text_p absolute bottom-6'>
                     <p className='about_name mx-auto'>NEERAJ BHATIA</p>
-                    <p className='about_desc'>Ravi is an acclained health educator, published author and co-founder of the health education platform Satvic</p>
+                    <p className='about_desc'> Certified Nutrition and Wellness Advisor-Diploma in Nutrition, Diploma in Diet Planning, Diploma in Weight Loss, Diploma in Fitness, Diploma in Sports Nutrition, Diploma in Keto Dietary Advisor, Diploma in Intermittent Fasting, Diploma in Dietary Supplement Advisor</p>
                   </div>
                 </div>
               </div>
@@ -120,8 +125,8 @@ const AboutFaq = () => {
               <div className='about_card_three h-96'>
                 <div className='about_containt h-full text-center relative'>
                   <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Charu</p>
-                    <p className='about_desc'>Ravi is an acclained health educator, published author and co-founder of the health education platform Satvic</p>
+                    <p className='about_name mx-auto'>Senior Coach Gurpreet</p>
+                    <p className='about_desc'>Certified Nutrition Advisor, Diploma in Weight loss.</p>
                   </div>
                 </div>
               </div>
@@ -131,7 +136,7 @@ const AboutFaq = () => {
                 <div className='about_containt h-full text-center relative'>
                   <div className='about_text_p absolute bottom-6'>
                     <p className='about_name mx-auto'>Senior Coach Niti</p>
-                    <p className='about_desc'>Ravi is an acclained health educator, published author and co-founder of the health education platform Satvic</p>
+                    <p className='about_desc'> Masters in Child Development & Nutrition, Certified Nutrition & Wellness Advisior, Diploma in Nutrition Diploma in Weightloss, Diploma in Gut health, Diploma in Dietary Supplement Advisor </p>
                   </div>
                 </div>
               </div>
@@ -140,8 +145,8 @@ const AboutFaq = () => {
               <div className='about_card_five h-96'>
                 <div className='about_containt h-full text-center relative'>
                   <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name mx-auto'>Senior Coach Menakshi</p>
-                    <p className='about_desc'>Ravi is an acclained health educator, published author and co-founder of the health education platform Satvic</p>
+                    <p className='about_name mx-auto'>Senior Coach Meenakshi</p>
+                    <p className='about_desc'>Certified Yoga Instructor by Ministry of Ayush, Diploma in Weight loss, Certified wellness & Nutrition Advisor, Diploma in Intermittent Fasting, Diploma in Dietary Supplement Advisor</p>
                   </div>
                 </div>
               </div>
@@ -151,7 +156,7 @@ const AboutFaq = () => {
                 <div className='about_containt h-full text-center relative'>
                   <div className='about_text_p absolute bottom-6'>
                     <p className='about_name mx-auto'>Senior Coach Manisha</p>
-                    <p className='about_desc'>Ravi is an acclained health educator, published author and co-founder of the health education platform Satvic</p>
+                    <p className='about_desc'>Diploma in Nutrition, Certified Wellness and Nutrition advisor, International Accredited Diploma in Yoga Training, Diploma in Weight loss</p>
                   </div>
                 </div>
               </div>
@@ -161,7 +166,20 @@ const AboutFaq = () => {
                 <div className='about_containt h-full text-center relative'>
                   <div className='about_text_p absolute bottom-6'>
                     <p className='about_name mx-auto'>Senior Coach Mukund</p>
-                    <p className='about_desc'>Ravi is an acclained health educator, published author and co-founder of the health education platform Satvic</p>
+                    <p className='about_desc'>An ex army officer, a trained Commando from Indian Army, Certified Internationally Accredited Diploma in Sports Nutrition, Diploma in Nutrition, Certified Wellness and Nutrition advisor, Diploma in Weight loss</p>
+                    <svg className={`w-6 h-6 transition-transform transform ${showContent ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='about_div'>
+              <div className='about_card_eight h-96'>
+                <div className='about_containt h-full text-center relative'>
+                  <div className='about_text_p absolute bottom-6'>
+                    <p className='about_name mx-auto'>Senior Coach Bikramjit Singh</p>
+                    <p className='about_desc'>Diploma in Weight loss, Certified Wellness & Nutrition Advisor</p>
                   </div>
                 </div>
               </div>
