@@ -306,9 +306,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='habit_card_two md:flex'>
-                                <div className='card_img_two md:flex justify-center flex-cols md:relative w-full md:w-1/3 h-48'>
-                                    <p className=' text-3xl lg:text-4xl ms-48 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>2.</span> </p>
-                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-36 mt-16' alt='habit' src={habitsvg2} />
+                                <div className='card_img_two md:flex justify-center flex-cols relative w-full md:w-1/3 h-48'>
+                                    <p className=' text-3xl lg:text-4xl ms-32 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>2.</span> </p>
+                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-28 mt-16' alt='habit' src={habitsvg2} />
                                 </div>
                                 <div className='card_habit_content text-center mx-5 md:mx-0 my-16 md:my-auto md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_two'>Food</p>
@@ -316,9 +316,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='habit_card_three md:flex'>
-                                <div className='card_img_three md:flex justify-center flex-cols md:relative w-full md:w-1/3 h-48'>
-                                    <p className=' text-3xl lg:text-4xl ms-48 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>3.</span> </p>
-                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-36 mt-16' alt='habit' src={habitsvg3} />
+                                <div className='card_img_three md:flex justify-center flex-cols relative w-full md:w-1/3 h-48'>
+                                    <p className=' text-3xl lg:text-4xl ms-32 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>3.</span> </p>
+                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-28 mt-16' alt='habit' src={habitsvg3} />
                                 </div>
                                 <div className='card_habit_content text-center mx-5 md:mx-0 my-16 md:my-auto md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_three'>Sleep</p>
@@ -326,9 +326,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='habit_card_four md:flex'>
-                                <div className='card_img_four md:flex justify-center flex-cols md:relative w-full md:w-1/3 h-48'>
-                                    <p className=' text-3xl lg:text-4xl ms-48 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>4.</span> </p>
-                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-36 mt-16' alt='habit' src={habitsvg4} />
+                            <div className='card_img_four md:flex justify-center flex-cols relative w-full md:w-1/3 h-48'>
+                                    <p className=' text-3xl lg:text-4xl ms-32 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>4.</span> </p>
+                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-28 mt-16' alt='habit' src={habitsvg4} />
                                 </div>
                                 <div className='card_habit_content text-center mx-5 md:mx-0 my-16 md:my-auto md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_four'>Movement</p>
@@ -336,9 +336,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='habit_card_five md:flex'>
-                                <div className='card_img_five md:flex justify-center flex-cols md:relative w-full md:w-1/3 h-48'>
-                                    <p className=' text-3xl lg:text-4xl ms-48 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>5.</span> </p>
-                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-36 mt-16' alt='habit' src={habitsvg5} />
+                            <div className='card_img_five md:flex justify-center flex-cols relative w-full md:w-1/3 h-48'>
+                                    <p className=' text-3xl lg:text-4xl ms-32 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>5.</span> </p>
+                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-28 mt-16' alt='habit' src={habitsvg5} />
                                 </div>
                                 <div className='card_habit_content text-center mx-5 md:mx-0 my-16 md:my-auto md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_five'>Relationships</p>
@@ -346,9 +346,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='habit_card_six md:flex'>
-                                <div className='card_img_six md:flex justify-center flex-cols md:relative w-full md:w-1/3 h-48'>
-                                    <p className=' text-3xl lg:text-4xl ms-48 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>6.</span> </p>
-                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-36 mt-16' alt='habit' src={habitsvg6} />
+                            <div className='card_img_six md:flex justify-center flex-cols relative w-full md:w-1/3 h-48'>
+                                    <p className=' text-3xl lg:text-4xl ms-32 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>6.</span> </p>
+                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-28 mt-16' alt='habit' src={habitsvg6} />
                                 </div>
                                 <div className='card_habit_content text-center mx-5 md:mx-0 my-16 md:my-auto md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_six'>Purpose</p>
@@ -356,9 +356,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='habit_card_seven md:flex'>
-                                <div className='card_img_seven md:flex justify-center flex-cols md:relative w-full md:w-1/3 h-48'>
-                                    <p className=' text-3xl lg:text-4xl ms-48 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>7.</span> </p>
-                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-36 mt-16' alt='habit' src={habitsvg7} />
+                            <div className='card_img_seven md:flex justify-center flex-cols relative w-full md:w-1/3 h-48'>
+                                    <p className=' text-3xl lg:text-4xl ms-32 sm:ms-48 md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>7.</span> </p>
+                                    <img className='flex md:mt-2 justify-end items-end absolute md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48 sm:ms-40  ms-28 mt-16' alt='habit' src={habitsvg7} />
                                 </div>
                                 <div className='card_habit_content text-center mx-5 md:mx-0 my-16 md:my-auto md:py-0 md:ml-20 ml-5 lg:ml-28 flex-none md:w-1/2'>
                                     <p className='habit_heading heading_seven'>Surprise</p>
