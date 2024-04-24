@@ -138,7 +138,6 @@
 }
 
 .cover_heading_p {
-    font-size: 20px;
     font-weight: 600;
 }
 
@@ -394,12 +393,6 @@
     color: #8AC640;
     font-weight: 600;
 }
-
-.prog_img {
-    height: 150px;
-    width: 300px;
-}
-
 .professional_card {
     background-color: #F5FFFF;
     border: 2px solid #34AEF2;

@@ -161,7 +161,7 @@ const Home = () => {
                     </div>
                     <div className='cover mt-16 sm:mx-14 mx-5 md:w-3/5'>
                         <center>
-                            <h1 className='cover_heading underline'>Cover</h1>
+                            <h1 className='cover_heading underline mb-10'>Cover</h1>
                         </center>
                         <div className='grid grid-cols-1 mx-8'>
                             <div className='image_desc ms:mb-10 mb-5 pb-3 grid-cols-2 flex'>
@@ -169,8 +169,8 @@ const Home = () => {
                                     <img className='sm:h-32 sm:w-40 h-20 w-20' alt='belly' src={belly} />
                                 </div>
                                 <div className='belly_text sm:ml-10 ml-5 w-3/4'>
-                                    <p className='cover_heading_p'>Happy Belly Happy Life :</p>
-                                    <p className='cover_heading_text' >How our Gut Health Matters in harbessing your Microbiome for wellness</p>
+                                    <p className='cover_heading_p sm:text-xl text-base'>Happy Belly Happy Life :</p>
+                                    <p className='cover_heading_text sm:text-base text-sm' >How our Gut Health Matters in harbessing your Microbiome for wellness</p>
                                 </div>
                             </div>
                         </div>
@@ -180,8 +180,8 @@ const Home = () => {
                                     <img className='sm:h-32 sm:w-40 h-20 w-20' alt='belly' src={tummy} />
                                 </div>
                                 <div className='belly_text sm:ml-10 ml-5 w-3/4'>
-                                    <p className='cover_heading_p'>Happy Tummy Delights :</p>
-                                    <p className='cover_heading_text' >“Nourishing Gut-friendly Recipes“</p>
+                                    <p className='cover_heading_p sm:text-xl text-base'>Happy Tummy Delights :</p>
+                                    <p className='cover_heading_text sm:text-base text-sm' >“Nourishing Gut-friendly Recipes“</p>
                                 </div>
                             </div>
                         </div>
@@ -191,8 +191,8 @@ const Home = () => {
                                     <img className='sm:h-32 sm:w-40 h-20 w-20' alt='belly' src={bacteria} />
                                 </div>
                                 <div className='belly_text  sm:ml-10 ml-5 w-3/4'>
-                                    <p className='cover_heading_p'>Bacteria Balance :</p>
-                                    <p className='cover_heading_text' >“The pre + Pro Primer for Gut health“</p>
+                                    <p className='cover_heading_p sm:text-xl text-base'>Bacteria Balance :</p>
+                                    <p className='cover_heading_text sm:text-base text-sm' >“The pre + Pro Primer for Gut health“</p>
                                 </div>
                             </div>
                         </div>
@@ -202,8 +202,8 @@ const Home = () => {
                                     <img className='sm:h-32 sm:w-40 h-20 w-20' alt='belly' src={qna} />
                                 </div>
                                 <div className='belly_text sm:ml-10 ml-5 w-3/4'>
-                                    <p className='cover_heading_p'>QNAs After Every Session :</p>
-                                    <p className='cover_heading_text' >“Ask Gut guru your digestive Health Questions“</p>
+                                    <p className='cover_heading_p sm:text-xl text-base'>QNAs After Every Session :</p>
+                                    <p className='cover_heading_text sm:text-base text-sm' >“Ask Gut guru your digestive Health Questions“</p>
                                 </div>
                             </div>
                         </div>
@@ -213,8 +213,8 @@ const Home = () => {
                                     <img className='sm:h-32 sm:w-40 h-20 w-20' alt='belly' src={community} />
                                 </div>
                                 <div className='belly_text sm:ml-10 ml-5 w-3/4'>
-                                    <p className='cover_heading_p'>Community Of Thousands of people :</p>
-                                    <p className='cover_heading_text' >“After the challenge you will get free access to our beautiful community of like minded people.“</p>
+                                    <p className='cover_heading_p sm:text-xl text-base'>Community Of Thousands of people :</p>
+                                    <p className='cover_heading_text sm:text-base text-sm' >“After the challenge you will get free access to our beautiful community of like minded people.“</p>
                                 </div>
                             </div>
                         </div>

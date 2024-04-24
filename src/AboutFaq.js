@@ -182,7 +182,7 @@ const AboutFaq = () => {
               <div className={`about_card h-96`} style={{ backgroundImage: `url(${coach.image})` }}>
                 <div className='about_containt h-full text-center relative' ref={el => containerRefs.current[index] = el}>
                   <div className='about_text_p absolute bottom-6'>
-                    <p className='about_name'>{coach.name}</p>
+                    <p className='about_name text-center'>{coach.name}</p>
                     <p className='about_desc'>{coach.desc}</p>
                   </div>
                 </div>
