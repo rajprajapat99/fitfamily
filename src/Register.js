@@ -83,7 +83,7 @@ const Register = () => {
 
     return (
         <>
-            <div className='register_form_div cover sm:px-16 mt-24 mx-4 md:mx-8 pt-10' id='formregister'>
+            <div className='register_form_div cover sm:px-16 mt-10 mx-4 md:mx-8 pt-6' id='formregister'>
 
                 {showAlert && (
                     <div className="alert new_add_alert alert-dismissible fade show" role="alert">
@@ -102,7 +102,7 @@ const Register = () => {
                                     type="text"
                                     autoComplete="off"
                                     id="name"
-                                    className="register_input text-gray-900 text-xl rounded-3xl p-2.5 dark:placeholder-gray-400 w-full mr-2"
+                                    className="register_input text-gray-900 text-sm sm:text-lg rounded-3xl p-2.5 dark:placeholder-gray-400 w-full mr-2"
                                     placeholder="Enter Your Full Name Here..."
                                     required
                                     onChange={(e) => setName(e.target.value)}
@@ -114,7 +114,7 @@ const Register = () => {
                                     type="email"
                                     autoComplete="off"
                                     id="email"
-                                    className="register_input text-xl text-gray-900  w-full mr-2  rounded-3xl p-2.5 dark:placeholder-gray-400  "
+                                    className="register_input text-sm sm:text-lg text-gray-900  w-full mr-2  rounded-3xl p-2.5 dark:placeholder-gray-400  "
                                     placeholder="Enter Your Email Address Here..."
                                     required onChange={(e) => setEmail(e.target.value)}
                                     value={email} />
@@ -124,7 +124,7 @@ const Register = () => {
                                 <input
                                     type="text"
                                     id="whatsapp"
-                                    className="register_input text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400"
+                                    className="register_input text-gray-900 text-sm sm:text-lg w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400"
                                     placeholder="Enter 10-digit Number Here..."
                                     pattern="[0-9]{10}"
                                     title="Please enter a 10-digit number"
@@ -144,20 +144,20 @@ const Register = () => {
                                 type="text"
                                 autoComplete="off"
                                 id="city" 
-                                className="register_input text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400  " 
+                                className="register_input text-gray-900 text-sm sm:text-lg w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400  " 
                                 placeholder="Jaipur, Rajasthan, India" 
                                 required onChange={(e) => setCity(e.target.value)}
                                 value={city} />
                             </div>
                         </div>
                         <div className='time_choose_div lg:flex grid-cols-1 lg:grid-cols-3 gap-5 md:mr-28'>
-                            <div className='choose_time text-xl w-full'>Choose Your Time Slot:</div>
+                            <div className='choose_time text-sm sm:text-lg w-full'>Choose Your Time Slot:</div>
                             <div className="mb-5 input_div flex w-full">
                                 <div className='name_tag  text-sm p-2 sm:text-lg'>From:</div>
                                 <input 
                                 type="time" 
                                 id="fromTime" 
-                                className="register_input text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
+                                className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
                                 required 
                                 onChange={(e) => setFromTime(e.target.value)}
                                 value={fromTime} />
@@ -167,7 +167,7 @@ const Register = () => {
                                 <input 
                                 type="time" 
                                 id="toTime" 
-                                className="register_input text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
+                                className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
                                 required 
                                 onChange={(e) => setToTime(e.target.value)}
                                     value={toTime} />
@@ -177,7 +177,7 @@ const Register = () => {
                             <div className="flex items-center h-5">
                                 <input id="terms" onChange={handleCheckboxChange} type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                             </div>
-                            <label htmlFor="terms" className="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+                            <label htmlFor="terms" className="ms-2 text-sm sm:text-lg font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
                         </div>
                     </form>
 

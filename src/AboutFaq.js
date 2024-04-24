@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import qna from './Images/qna.jpg'
 import vivek from './Images/vivek.jpg'
 import neeraj from './Images/neeraj.jpg'
@@ -14,7 +14,7 @@ const AboutFaq = () => {
   const [showContent, setShowContent] = useState(false);
 
   const toggleContent = () => {
-      setShowContent(!showContent);
+    setShowContent(!showContent);
   };
   const toggleQuestion = (index) => {
     if (openQuestion === index) {
@@ -48,7 +48,7 @@ const AboutFaq = () => {
     container.scrollTop += deltaY;
   };
 
-   
+
 
   const faqData = [
     {
@@ -136,7 +136,7 @@ const AboutFaq = () => {
   ];
   return (
     <>
-      <div className='cover mx-16 mt-24 px-4 py-10  w-3/5'>
+      <div className='cover sm:mx-16 mx-5 mt-16 px-4 py-6 md:w-3/5'>
         <center className=''>
           <p className='faq_heading'>FAQs</p>
         </center>
@@ -160,7 +160,7 @@ const AboutFaq = () => {
                     {faqItem.question}
                   </button>
                   {openQuestion === index && (
-                    <p className="faq-answer text-sm pb-2 ml-10 pl-5">
+                    <p className="faq-answer text-sm pb-2 ml-5">
                       {faqItem.answer}
                     </p>
                   )}
@@ -171,15 +171,15 @@ const AboutFaq = () => {
         </div>
       </div>
       <div className='pb-10'>
-        <div className='about_container mt-16 h-96 pt-10'>
-          <center className=' w-3/5'>
+        <div className='about_container mt-10 h-80 pt-6'>
+          <center className=' w-full md:w-3/5'>
             <p className='about_heading'>About The Hosts</p>
           </center>
         </div>
-          <div className='grid grid-cols-1 mx-16 md:grid-cols-2 lg:grid-cols-3 gap-5 -mt-48  w-3/5'>
+        <div className='grid grid-cols-1 sm:mx-16 mx-5 sm:grid-cols-2 lg:grid-cols-3 gap-5 -mt-48 md:w-3/5'>
           {aboutData.map((coach, index) => (
             <div className='about_div' key={index}>
-              <div className={`about_card h-96`} style={{backgroundImage: `url(${coach.image})`}}>
+              <div className={`about_card h-96`} style={{ backgroundImage: `url(${coach.image})` }}>
                 <div className='about_containt h-full text-center relative' ref={el => containerRefs.current[index] = el}>
                   <div className='about_text_p absolute bottom-6'>
                     <p className='about_name'>{coach.name}</p>
@@ -189,8 +189,8 @@ const AboutFaq = () => {
               </div>
             </div>
           ))}
-          </div>
         </div>
+      </div>
     </>
   )
 }
