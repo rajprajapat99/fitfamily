@@ -13,16 +13,15 @@ const Register = () => {
     console.log(name, email, whatsapp, city, fromTime, toTime)
 
     const handleCheckboxChange = (e) => {
-        const isChecked = e.target.checked; // Get the current state of the checkbox
-        setIsChecked(isChecked); // Update isChecked state based on checkbox status
-        if (isChecked) { // Check if checkbox is checked
-            handleSubmit(e); // Call handleSubmit if checkbox is checked
+        const isChecked = e.target.checked;
+        setIsChecked(isChecked);
+        if (isChecked) {
+            handleSubmit(e);
         }
     };
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!name || !email || !whatsapp || !city || !fromTime || !toTime) {
-            console.error('Please fill in all required fields');
             setShowAlert(true)
             setTimeout(() => {
                 setShowAlert(false);
@@ -46,40 +45,11 @@ const Register = () => {
                 setCity('');
                 setFromTime('');
                 setToTime('');
-                // Call the "Pay Now" function here
-                // payNow();
             })
             .catch((error) => {
                 console.error('Error while submitting data:', error);
-                // Handle error if needed
             });
     }
-
-
-    useEffect(() => {
-        // Function to get the current time in HH:MM format
-        const getCurrentTime = () => {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            return `${hours}:${minutes}`;
-        };
-
-        // Set the current time as the default value for the "To" input field
-        setToTime(getCurrentTime());
-        setFromTime(getCurrentTime());
-    }, []);
-    // const payNow = () => {
-    //     const script = document.createElement('script');
-    //     script.src = 'https://checkout.razorpay.com/v1/payment-button.js';
-    //     script.setAttribute('data-payment_button_id', 'pl_O1ZlX0NhjA1LUG');
-    //     script.async = true;
-    //     document.body.appendChild(script);
-
-    //     return () => {
-    //         document.body.removeChild(script);
-    //     };
-    // };
 
     return (
         <>
@@ -140,36 +110,36 @@ const Register = () => {
 
                             <div className="mb-5 input_div flex  sm:w-4/5">
                                 <div className='name_tag  text-sm p-2 sm:text-lg'>Your City*</div>
-                                <input 
-                                type="text"
-                                autoComplete="off"
-                                id="city" 
-                                className="register_input text-gray-900 text-sm sm:text-lg w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400  " 
-                                placeholder="Jaipur, Rajasthan, India" 
-                                required onChange={(e) => setCity(e.target.value)}
-                                value={city} />
+                                <input
+                                    type="text"
+                                    autoComplete="off"
+                                    id="city"
+                                    className="register_input text-gray-900 text-sm sm:text-lg w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400  "
+                                    placeholder="Jaipur, Rajasthan, India"
+                                    required onChange={(e) => setCity(e.target.value)}
+                                    value={city} />
                             </div>
                         </div>
                         <div className='time_choose_div lg:flex grid-cols-1 lg:grid-cols-3 gap-5 md:mr-28'>
                             <div className='choose_time text-sm sm:text-lg w-full'>Choose Your Time Slot:</div>
                             <div className="mb-5 input_div flex w-full">
                                 <div className='name_tag  text-sm p-2 sm:text-lg'>From:</div>
-                                <input 
-                                type="time" 
-                                id="fromTime" 
-                                className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
-                                required 
-                                onChange={(e) => setFromTime(e.target.value)}
-                                value={fromTime} />
+                                <input
+                                    type="time"
+                                    id="fromTime"
+                                    className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 "
+                                    required
+                                    onChange={(e) => setFromTime(e.target.value)}
+                                    value={fromTime} />
                             </div>
                             <div className="mb-5 input_div flex w-full">
                                 <div className='name_tag  text-sm p-2 sm:text-lg'>To:</div>
-                                <input 
-                                type="time" 
-                                id="toTime" 
-                                className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
-                                required 
-                                onChange={(e) => setToTime(e.target.value)}
+                                <input
+                                    type="time"
+                                    id="toTime"
+                                    className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 "
+                                    required
+                                    onChange={(e) => setToTime(e.target.value)}
                                     value={toTime} />
                             </div>
                         </div>
