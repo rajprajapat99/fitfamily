@@ -77,19 +77,19 @@ const Home = () => {
                                 <button onClick={() => window.location.href = '#formregister'} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
                                 <p className=' text-2xl font-semibold'>Challenge starting in</p>
                                 <div className='grid grid-cols-6'>
-                                    <div className='flex-col'>
+                                    <div className='flex-cols'>
                                         <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.days}</div>
                                         <p className='ml-3 text-sm'>Days</p>
                                     </div>
-                                    <div className='flex-col'>
+                                    <div className='flex-cols'>
                                         <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.hours}</div>
                                         <p className='ml-3 text-sm'>Hours</p>
                                     </div>
-                                    <div className='flex-col'>
+                                    <div className='flex-cols'>
                                         <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.minutes}</div>
                                         <p className='ml-3 text-sm'>Mins</p>
                                     </div>
-                                    <div className='flex-col'>
+                                    <div className='flex-cols'>
                                         <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.seconds}</div>
                                         <p className='ml-3 text-sm'>Secs</p>
                                     </div>
@@ -159,12 +159,12 @@ const Home = () => {
                             <img className='gut_icon' alt='icon' src={contro} />
                             <span className='date'>Eat and Sleep better</span> </div>
                     </div>
-                    <div className='cover mx-20 mt-24 px-4 pt-10 w-3/5'>
+                    <div className='cover md:mx-20 mx-14 mt-24 px-4 pt-10 w-3/5'>
                         <center>
                             <h1 className='cover_heading underline'>Cover</h1>
                         </center>
-                        <div className='grid grid-col-1 mx-8'>
-                            <div className='image_desc mb-10 pb-3 grid-col-2 flex'>
+                        <div className='grid grid-cols-1 mx-8'>
+                            <div className='image_desc mb-10 pb-3  grid-cols-2 flex'>
                                 <div className='image'>
                                     <img className='cover_img' alt='belly' src={belly} />
                                 </div>
@@ -174,8 +174,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='grid grid-col-1 mx-8'>
-                            <div className='image_desc mb-10 pb-3 grid-col-2 flex'>
+                        <div className='grid grid-cols-1 mx-8'>
+                            <div className='image_desc mb-10 pb-3 grid-cols-2 flex'>
                                 <div className='image'>
                                     <img className='cover_img' alt='belly' src={tummy} />
                                 </div>
@@ -185,8 +185,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='grid grid-col-1 mx-8'>
-                            <div className='image_desc mb-10 pb-3 grid-col-2 flex'>
+                        <div className='grid grid-cols-1 mx-8'>
+                            <div className='image_desc mb-10 pb-3 grid-cols-2 flex'>
                                 <div className='image'>
                                     <img className='cover_img' alt='belly' src={bacteria} />
                                 </div>
@@ -196,8 +196,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='grid grid-col-1 mx-8'>
-                            <div className='image_desc mb-10 pb-3 grid-col-2 flex'>
+                        <div className='grid grid-cols-1 mx-8'>
+                            <div className='image_desc mb-10 pb-3 grid-cols-2 flex'>
                                 <div className='image'>
                                     <img className='cover_img' alt='belly' src={qna} />
                                 </div>
@@ -207,8 +207,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='grid grid-col-1 mx-8'>
-                            <div className='image_desc mb-10 pb-3 grid-col-2 flex'>
+                        <div className='grid grid-cols-1 mx-8'>
+                            <div className='image_desc mb-10 pb-3 grid-cols-2 flex'>
                                 <div className='image'>
                                     <img className='cover_img' alt='belly' src={community} />
                                 </div>
@@ -290,13 +290,13 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='cover mx-20 my-20 px-4 pt-10  w-3/5'>
+                    <div className='cover md:mx-20 mx-14 my-20 px-4 pt-10  w-3/5'>
                         <center className='mb-16'>
                             <h1 className=' text-2xl sm:text-3xl lg:text-4xl underline'>What are the 7 Habits I will Learn ?</h1>
                         </center>
                         <div className='habit_card_container mx-8 pb-10'>
-                            <div className='habit_card_one flex flex-col md:flex-row'>
-                                <div className='card_img_one md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
+                            <div className='habit_card_one flex flex-cols md:flex-row'>
+                                <div className='card_img_one md:flex justify-center flex-cols md:relative md:w-1/3 h-48'>
                                     <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>1.</span> </p>
                                     <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg1} />
                                 </div>
@@ -305,8 +305,8 @@ const Home = () => {
                                     <p className='habit_desc'>Experience the two most practical ways of detoxifying your body everyday</p>
                                 </div>
                             </div>
-                            <div className='habit_card_two flex flex-col md:flex-row'>
-                                <div className='card_img_two md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
+                            <div className='habit_card_two flex flex-cols md:flex-row'>
+                                <div className='card_img_two md:flex justify-center flex-cols md:relative md:w-1/3 h-48'>
                                     <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>2.</span> </p>
                                     <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg2} />
                                 </div>
@@ -315,8 +315,8 @@ const Home = () => {
                                     <p className='habit_desc'>Understand what food the human body is designed to eat</p>
                                 </div>
                             </div>
-                            <div className='habit_card_three flex flex-col md:flex-row'>
-                                <div className='card_img_three md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
+                            <div className='habit_card_three flex flex-cols md:flex-row'>
+                                <div className='card_img_three md:flex justify-center flex-cols md:relative md:w-1/3 h-48'>
                                     <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>3.</span> </p>
                                     <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg3} />
                                 </div>
@@ -325,8 +325,8 @@ const Home = () => {
                                     <p className='habit_desc'>Learn practice tips as to how you can deepen your sleep</p>
                                 </div>
                             </div>
-                            <div className='habit_card_four flex flex-col md:flex-row'>
-                                <div className='card_img_four md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
+                            <div className='habit_card_four flex flex-cols md:flex-row'>
+                                <div className='card_img_four md:flex justify-center flex-cols md:relative md:w-1/3 h-48'>
                                     <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>4.</span> </p>
                                     <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg4} />
                                 </div>
@@ -335,8 +335,8 @@ const Home = () => {
                                     <p className='habit_desc'>Build a consistent exercise routine that you can actually follow.</p>
                                 </div>
                             </div>
-                            <div className='habit_card_five flex flex-col md:flex-row'>
-                                <div className='card_img_five md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
+                            <div className='habit_card_five flex flex-cols md:flex-row'>
+                                <div className='card_img_five md:flex justify-center flex-cols md:relative md:w-1/3 h-48'>
                                     <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>5.</span> </p>
                                     <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg5} />
                                 </div>
@@ -345,8 +345,8 @@ const Home = () => {
                                     <p className='habit_desc'>Learn how to improve your existing relationships and fix the strained ones.</p>
                                 </div>
                             </div>
-                            <div className='habit_card_six flex flex-col md:flex-row'>
-                                <div className='card_img_six md:flex justify-center flex-col md:relative md:w-1/3 h-48'>
+                            <div className='habit_card_six flex flex-cols md:flex-row'>
+                                <div className='card_img_six md:flex justify-center flex-cols md:relative md:w-1/3 h-48'>
                                     <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>6.</span> </p>
                                     <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute md:-right-16 top-20 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg6} />
                                 </div>
@@ -355,8 +355,8 @@ const Home = () => {
                                     <p className='habit_desc'>We are all sent to this Earth with an intention. Find out yours!</p>
                                 </div>
                             </div>
-                            <div className='habit_card_seven flex flex-col md:flex-row'>
-                                <div className='card_img_seven md:flex justify-center md:flex-col md:relative text-center md:w-1/3 h-48'>
+                            <div className='habit_card_seven flex flex-cols md:flex-row'>
+                                <div className='card_img_seven md:flex justify-center md:flex-cols md:relative text-center md:w-1/3 h-48'>
                                     <p className=' absolute text-3xl lg:text-4xl md:ml-2'>HABIT <br /> <span className='habit_count ml-10'>7.</span> </p>
                                     <img className='flex md:mt-2 mt-36 justify-end items-end md:absolute  md:-right-16 md:inset-y-6 h-28 lg:h-32 md:ms-48  ms-24' alt='habit' src={habitsvg7} />
                                 </div>

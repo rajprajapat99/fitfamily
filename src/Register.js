@@ -83,7 +83,7 @@ const Register = () => {
 
     return (
         <>
-            <div className='register_form_div cover px-16 mt-24 mx-8 pt-10' id='formregister'>
+            <div className='register_form_div cover sm:px-16 mt-24 mx-4 md:mx-8 pt-10' id='formregister'>
 
                 {showAlert && (
                     <div className="alert new_add_alert alert-dismissible fade show" role="alert">
@@ -95,29 +95,36 @@ const Register = () => {
                 </center>
                 <div className='mx-8'>
                     <form className="pb-10" onSubmit={handleSubmit}>
-                        <div className='grid grid-cols-1 md:grid-cols-2'>
-                            <div className="mb-5 input_div flex w-4/5">
-                                <div className='name_tag'>Name*</div>
+                        <div className='grid grid-cols-1 lg:grid-cols-2'>
+                            <div className="mb-5 input_div flex sm:w-4/5">
+                                <div className='name_tag text-sm p-2 sm:text-lg'>Name*</div>
                                 <input
                                     type="text"
+                                    autoComplete="off"
                                     id="name"
-                                    className="text-gray-900 text-xl rounded-3xl p-2.5 dark:placeholder-gray-400 w-full mr-2"
+                                    className="register_input text-gray-900 text-xl rounded-3xl p-2.5 dark:placeholder-gray-400 w-full mr-2"
                                     placeholder="Enter Your Full Name Here..."
                                     required
                                     onChange={(e) => setName(e.target.value)}
                                     value={name} />
                             </div>
-                            <div className="mb-5 input_div flex  w-4/5">
-                                <div className='name_tag'>Email Id*</div>
-                                <input type="email" id="email" className=" text-xl text-gray-900  w-full mr-2  rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Enter Your Email Address Here..." required onChange={(e) => setEmail(e.target.value)}
+                            <div className="mb-5 input_div flex  sm:w-4/5">
+                                <div className='name_tag  text-sm p-2 sm:text-lg'>Email Id*</div>
+                                <input
+                                    type="email"
+                                    autoComplete="off"
+                                    id="email"
+                                    className="register_input text-xl text-gray-900  w-full mr-2  rounded-3xl p-2.5 dark:placeholder-gray-400  "
+                                    placeholder="Enter Your Email Address Here..."
+                                    required onChange={(e) => setEmail(e.target.value)}
                                     value={email} />
                             </div>
-                            <div className="mb-5 input_div flex w-4/5">
-                                <div className='name_tag'>Whatsapp No.*</div>
+                            <div className="mb-5 input_div flex sm:w-4/5">
+                                <div className='name_tag  text-sm p-2 sm:text-lg'>Whatsapp No.*</div>
                                 <input
                                     type="text"
                                     id="whatsapp"
-                                    className="text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400"
+                                    className="register_input text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400"
                                     placeholder="Enter 10-digit Number Here..."
                                     pattern="[0-9]{10}"
                                     title="Please enter a 10-digit number"
@@ -131,22 +138,38 @@ const Register = () => {
                                 />
                             </div>
 
-                            <div className="mb-5 input_div flex  w-4/5">
-                                <div className='name_tag'>Your City*</div>
-                                <input type="text" id="city" className=" text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400  " placeholder="Jaipur, Rajasthan, India" required onChange={(e) => setCity(e.target.value)}
-                                    value={city} />
+                            <div className="mb-5 input_div flex  sm:w-4/5">
+                                <div className='name_tag  text-sm p-2 sm:text-lg'>Your City*</div>
+                                <input 
+                                type="text"
+                                autoComplete="off"
+                                id="city" 
+                                className="register_input text-gray-900 text-xl w-3/5 rounded-3xl p-2.5 dark:placeholder-gray-400  " 
+                                placeholder="Jaipur, Rajasthan, India" 
+                                required onChange={(e) => setCity(e.target.value)}
+                                value={city} />
                             </div>
                         </div>
-                        <div className='time_choose_div flex grid-cols-3 gap-5 mr-28'>
+                        <div className='time_choose_div lg:flex grid-cols-1 lg:grid-cols-3 gap-5 md:mr-28'>
                             <div className='choose_time text-xl w-full'>Choose Your Time Slot:</div>
                             <div className="mb-5 input_div flex w-full">
-                                <div className='name_tag'>From:</div>
-                                <input type="time" id="fromTime" className=" text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " required onChange={(e) => setFromTime(e.target.value)}
-                                    value={fromTime} />
+                                <div className='name_tag  text-sm p-2 sm:text-lg'>From:</div>
+                                <input 
+                                type="time" 
+                                id="fromTime" 
+                                className="register_input text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
+                                required 
+                                onChange={(e) => setFromTime(e.target.value)}
+                                value={fromTime} />
                             </div>
                             <div className="mb-5 input_div flex w-full">
-                                <div className='name_tag'>To:</div>
-                                <input type="time" id="toTime" className=" text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " required onChange={(e) => setToTime(e.target.value)}
+                                <div className='name_tag  text-sm p-2 sm:text-lg'>To:</div>
+                                <input 
+                                type="time" 
+                                id="toTime" 
+                                className="register_input text-gray-900 text-xl w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 " 
+                                required 
+                                onChange={(e) => setToTime(e.target.value)}
                                     value={toTime} />
                             </div>
                         </div>
