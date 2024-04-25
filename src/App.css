@@ -634,4 +634,13 @@ outline: none;
     opacity: .75;
     color: #EB0C77;
 }
-
+.razorpay-payment-button .svelte-ohbfj8{
+    display: flex !important;
+    justify-content: center;
+    margin-top: 30px;
+}
+.svelte-ohbfj8{
+    display: flex !important;
+    justify-content: center;
+    margin-top: 30px;
+}
