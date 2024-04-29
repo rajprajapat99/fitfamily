@@ -644,3 +644,14 @@ outline: none;
     justify-content: center;
     margin-top: 30px;
 }
+
+.whatsapp_container{
+    background-color: #F5F5F5; 
+}
+.pay_success_p{
+    color: #EB0C77;    
+}
+.link_whatsapp{
+    color: blue;
+    text-decoration: underline;
+}

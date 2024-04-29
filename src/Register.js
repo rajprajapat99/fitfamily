@@ -21,7 +21,7 @@ const Register = () => {
             }, 3000);
             return;
         }
-        else{
+        else {
             setIsChecked(e.target.checked);
             handleSubmit(e)
         }
@@ -55,7 +55,6 @@ const Register = () => {
 
     useEffect(() => {
         if (showRazorpayButton) {
-            // Dynamically load Razorpay script
             const script = document.createElement('script');
             script.src = 'https://checkout.razorpay.com/v1/payment-button.js';
             script.async = true;
@@ -63,6 +62,7 @@ const Register = () => {
             document.getElementById('registration-form').appendChild(script);
         }
     }, [showRazorpayButton]);
+
 
     return (
         <>
