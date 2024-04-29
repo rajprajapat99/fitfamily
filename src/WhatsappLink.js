@@ -12,7 +12,7 @@ const WhatsappLink = () => {
                     </Link>
                 </div>
             </div>
-            <div className='whatsapp_container mx-24 my-20 rounded-xl'>
+            <div className='whatsapp_container md:mx-24 sm:mx-10 mx-5 my-20 rounded-xl'>
                 <div className='h-96'>
                     <div className='pay_success pt-16 text-center'>
                         <p className='pay_success_p md:text-3xl text-xl mb-4'>
