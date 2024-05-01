@@ -50,7 +50,7 @@ const Home = () => {
         };
     };
 
-    const targetDate = new Date('2024-04-30T23:59:59');
+    const targetDate = new Date('2024-05-03T23:59:59');
     const [remainingTime, setRemainingTime] = useState(calculateRemainingTime(targetDate));
 
     useEffect(() => {
