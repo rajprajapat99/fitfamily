@@ -13,7 +13,7 @@ const Register = () => {
     const [showRazorpayButton, setShowRazorpayButton] = useState(false);
 
     const handleCheckboxChange = (e) => {
-        if (!name || !email || !whatsapp || !city || !fromTime || !toTime) {
+        if (!name || !email || !whatsapp || !city) {
             setShowAlert(true);
             setIsChecked(false)
             setTimeout(() => {
@@ -63,10 +63,9 @@ const Register = () => {
         }
     }, [showRazorpayButton]);
 
-
     return (
         <>
-            <div className='register_form_div cover sm:px-16 mt-10 mx-4 md:mx-8 pt-6' id='formregister'>
+            <div className='register_form_div cover sm:px-16 mt-10 mx-4 md:mx-8 py-12' id='formregister'>
 
                 {showAlert && (
                     <div className="alert new_add_alert alert-dismissible fade show" role="alert">
@@ -131,29 +130,6 @@ const Register = () => {
                                     placeholder="Jaipur, Rajasthan, India"
                                     required onChange={(e) => setCity(e.target.value)}
                                     value={city} />
-                            </div>
-                        </div>
-                        <div className='time_choose_div lg:flex grid-cols-1 lg:grid-cols-3 gap-5 md:mr-28'>
-                            <div className='choose_time text-sm sm:text-lg w-full'>Choose Your Time Slot:</div>
-                            <div className="mb-5 input_div flex w-full">
-                                <div className='name_tag  text-sm p-2 sm:text-lg'>From:</div>
-                                <input
-                                    type="time"
-                                    id="fromTime"
-                                    className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 "
-                                    required
-                                    onChange={(e) => setFromTime(e.target.value)}
-                                    value={fromTime} />
-                            </div>
-                            <div className="mb-5 input_div flex w-full">
-                                <div className='name_tag  text-sm p-2 sm:text-lg'>To:</div>
-                                <input
-                                    type="time"
-                                    id="toTime"
-                                    className="register_input text-gray-900 text-sm sm:text-lg w-2/5  rounded-3xl p-2.5 dark:placeholder-gray-400 "
-                                    required
-                                    onChange={(e) => setToTime(e.target.value)}
-                                    value={toTime} />
                             </div>
                         </div>
                         <div className="flex justify-center items-center mt-5">

@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import gutVideo from './Images/GutReset IntroVideo.mp4'
 import logo from './Images/logo.svg'
-import time from './Images/TIME.svg'
-import duration from './Images/DURATION.svg'
 import speakers from './Images/SPEAKERS.svg'
 import goal from './Images/GOAL.svg'
 import belly from './Images/belly.jpg'
@@ -16,6 +14,7 @@ import bloating from './Images/bloating.jpg'
 import sleep from './Images/sleep.jpg'
 import glowing from './Images/glowing.jpg'
 import energy from './Images/energy.jpg'
+import whatsapp from './Images/WhatsApp.png'
 import habitsvg1 from './Images/habitsvg1.svg'
 import habitsvg2 from './Images/habitsvg2.svg'
 import habitsvg3 from './Images/habitsvg3.svg'
@@ -30,6 +29,8 @@ import Register from './Register'
 import Testimonial from './Testimonial'
 import Programme from './Programme'
 import AboutFaq from './AboutFaq'
+import Speakers from './Speakers'
+import ForWhom from './ForWhom'
 
 const Home = () => {
     const scrollToRegister = () => {
@@ -38,6 +39,19 @@ const Home = () => {
             registerElement.scrollIntoView({ behavior: 'smooth' });
         }
     };
+    const scrollToSpeakers = () => {
+        const registerElement = document.getElementById('speakers');
+        if (registerElement) {
+            registerElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    const scrollToGoal = () => {
+        const registerElement = document.getElementById('topics-covered');
+        if (registerElement) {
+            registerElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
 
     const calculateRemainingTime = (targetDate) => {
         const now = new Date();
@@ -67,6 +81,16 @@ const Home = () => {
         return () => clearInterval(intervalId);
     }, []);
 
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+
+        localStorage.clear();
+        if (videoRef.current) {
+            videoRef.current.playbackRate = 1;
+        }
+    }, []);
+
     return (
         <>
             <div className='logo_bg h-20 flex justify-center items-top'>
@@ -78,7 +102,7 @@ const Home = () => {
                 <div className='challenge md:px-20 px-14 pt-24'>
                     <div className='grid md:grid-cols-2 '>
                         <div className=''>
-                            <p className='font_color font-bold lg:text-4xl md:text-2xl sm:text-4xl stroke-white'>GUT <span className='span_color'>RESET</span> CHALLENGE</p>
+                            <p className='font_color text-center font-bold lg:text-4xl text-3xl sm:text-4xl stroke-white zoom-effect'>GUT <span className='span_color'>RESET</span> CHALLENGE</p>
                             <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
                             <p className=' text-2xl font-semibold'>Challenge starting in</p>
                             <div className='grid grid-cols-6'>
@@ -101,29 +125,39 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='rounded '>
-                            <video autoPlay={true} controls className='w-full h-full rounded mt-5 md:mt-0'>
+                            <video ref={videoRef} autoPlay loop muted pause controls className='w-full h-full rounded mt-5 md:mt-0'>
                                 <source src={gutVideo} type="video/mp4" />
                             </video>
                         </div>
                     </div>
+
+                    {/* <div className='whatsapp_div block md:hidden'>
+                        <img alt='whatsapp' src={whatsapp} className='text_whatsapp h-20' />
+                    </div> */}
+                    <div className='whatsapp_div'>
+                        <a href='https://wa.me/+918058900267?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
+                            <img alt='whatsapp' src={whatsapp} className='text_whatsapp h-16' />
+                        </a>
+                    </div>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10 mt-10'>
                         <div className='card_exe py-5 time'>
                             <div className=''>
-                                <div className='exercise_time'>
-                                    <img className='exercise_time' alt='time' src={time} />
+                                <div className='text-center'>
+                                    <p className='exer_time text-3xl py-2'>5 May</p>
+                                    <p className='exer_time text-xl'>6:00 AM</p>
                                 </div>
-                                <p className='time_p'>TIME</p>
+                                {/* <p className='time_p'>TIME</p> */}
                             </div>
                         </div>
                         <div className='card_exe py-5 duration'>
                             <div className=''>
-                                <div className='exercise_time'>
-                                    <img className='exercise_duration' alt='duration' src={duration} />
+                                <div className='text-center'>
+                                    <p className='duration_time text-3xl'>2 Hours</p>
                                 </div>
                                 <p className='time_p'>DURATION</p>
                             </div>
                         </div>
-                        <div className='card_exe py-5 speakers'>
+                        <div className='card_exe py-5 speakers' onClick={scrollToSpeakers}>
                             <div className=''>
                                 <div className='exercise_time'>
                                     <img className='exercise_speakers' alt='speakers' src={speakers} />
@@ -131,7 +165,7 @@ const Home = () => {
                                 <p className='time_p'>SPEAKERS</p>
                             </div>
                         </div>
-                        <div className='card_exe py-5 goal'>
+                        <div className='card_exe py-5 goal' onClick={scrollToGoal}>
                             <div className=''>
                                 <div className='exercise_time'>
                                     <img className='exercise_goal' alt='goal' src={goal} />
@@ -153,7 +187,7 @@ const Home = () => {
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={contro} />
                         <span className='date lg:text-base text-sm'>Contribution: Rs: 99</span> </div>
-                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
+                    <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={calander} />
                         <span className='date lg:text-base text-sm'>High energy and focus</span> </div>
@@ -164,9 +198,15 @@ const Home = () => {
                         <img className='gut_icon' alt='icon' src={contro} />
                         <span className='date lg:text-base text-sm'>Eat and Sleep better</span> </div>
                 </div>
-                <div className='cover mt-16 sm:mx-14 mx-5 md:w-3/5'>
+                <ForWhom />
+                <div className='sm:mx-14 mx-5 md:w-3/5'>
                     <center>
-                        <h1 className='cover_heading underline mb-10'>Cover</h1>
+                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
+                    </center>
+                </div>
+                <div className='cover mt-10 sm:mx-14 mx-5 md:w-3/5' id='topics-covered'>
+                    <center>
+                        <h1 className='cover_heading underline mb-10'>Topics Covered</h1>
                     </center>
                     <div className='grid grid-cols-1 mx-8'>
                         <div className='image_desc ms:mb-10 mb-5 pb-3 grid-cols-2 flex'>
@@ -224,10 +264,15 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div className='sm:mx-14 mx-5 md:w-3/5'>
+                    <center>
+                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
+                    </center>
+                </div>
                 <div className='logo_bgc h-2 mt-10'></div>
                 <div className=' h-1'></div>
                 <div className='logo_bgc h-2'></div>
-                <div className='benefits md:pl-20 px-10 py-10'>
+                <div className='benefits md:pl-20 px-10 py-10' id='main-goal'>
                     <center className=' w-full md:w-3/5'>
                         <p className=' text-white text-2xl sm:text-3xl lg:text-4xl my-5'>Benefits You Will Gain</p>
                         <p className='text-white text-xl sm:text-2xl lg:text-2xl mb-5'>By Taking This Challange</p>
@@ -279,7 +324,7 @@ const Home = () => {
                                     <img className='benefit_img' alt='craving' src={glowing} />
                                 </div>
                                 <div className='card_content text-center'>
-                                    <p className='card_text py-5'>Glowing For <br /> Clear Skin</p>
+                                    <p className='card_text py-5'>Glowing & <br /> Clear Skin</p>
                                 </div>
                             </div>
                         </div>
@@ -294,6 +339,11 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='sm:mx-14 mx-5 md:w-3/5'>
+                    <center>
+                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
+                    </center>
                 </div>
                 <div className='cover md:mx-20 sm:mx-10 mx-5 my-10 px-4 pt-8 md:w-3/5'>
                     <center className='mb-16'>
@@ -372,9 +422,25 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div className='sm:mx-14 mb-10 mx-5 md:w-3/5'>
+                    <center>
+                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 text-xl'>Register Now</button>
+                    </center>
+                </div>
                 <Testimonial />
+                <div className='sm:mx-14 mx-5 md:w-3/5'>
+                    <center>
+                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
+                    </center>
+                </div>
                 <Programme />
+                <div className='sm:mx-14 mx-5 md:w-3/5'>
+                    <center>
+                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 text-xl'>Register Now</button>
+                    </center>
+                </div>
                 <AboutFaq />
+                <div id='speakers'><Speakers /></div>
                 <div id='register-here'><Register /></div>
             </div>
         </>
