@@ -103,26 +103,28 @@ const Home = () => {
                     <div className='grid md:grid-cols-2 '>
                         <div className=''>
                             <p className='font_color text-center font-bold lg:text-4xl text-3xl sm:text-4xl stroke-white zoom-effect'>GUT <span className='span_color'>RESET</span> CHALLENGE</p>
-                            <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
+                            <center><button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button></center>
                             <p className=' text-2xl font-semibold'>Challenge starting in</p>
-                            <div className='grid grid-cols-6'>
-                                <div className='flex-cols'>
-                                    <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.days}</div>
-                                    <p className='ml-3 text-sm'>Days</p>
+                            <center>
+                                <div className='flex grid-cols-6 md:gap-10 gap-5 justify-center'>
+                                    <div className='flex-cols'>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.days}</div>
+                                        <p className='ml-3 text-sm'>Days</p>
+                                    </div>
+                                    <div className='flex-cols'>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.hours}</div>
+                                        <p className='ml-3 text-sm'>Hours</p>
+                                    </div>
+                                    <div className='flex-cols'>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.minutes}</div>
+                                        <p className='ml-3 text-sm'>Mins</p>
+                                    </div>
+                                    <div className='flex-cols'>
+                                        <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.seconds}</div>
+                                        <p className='ml-3 text-sm'>Secs</p>
+                                    </div>
                                 </div>
-                                <div className='flex-cols'>
-                                    <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.hours}</div>
-                                    <p className='ml-3 text-sm'>Hours</p>
-                                </div>
-                                <div className='flex-cols'>
-                                    <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.minutes}</div>
-                                    <p className='ml-3 text-sm'>Mins</p>
-                                </div>
-                                <div className='flex-cols'>
-                                    <div className='time_div h-12 w-12 sm:w-14 sm:h-14 md:w-11 md:h-11 lg:h-14 lg:w-14 text-2xl mt-5 rounded'>{remainingTime.seconds}</div>
-                                    <p className='ml-3 text-sm'>Secs</p>
-                                </div>
-                            </div>
+                            </center>
                         </div>
                         <div className='rounded '>
                             <video ref={videoRef} autoPlay loop muted pause controls className='w-full h-full rounded mt-5 md:mt-0'>
@@ -130,10 +132,6 @@ const Home = () => {
                             </video>
                         </div>
                     </div>
-
-                    {/* <div className='whatsapp_div block md:hidden'>
-                        <img alt='whatsapp' src={whatsapp} className='text_whatsapp h-20' />
-                    </div> */}
                     <div className='whatsapp_div'>
                         <a href='https://wa.me/+918058900267?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
                             <img alt='whatsapp' src={whatsapp} className='text_whatsapp h-16' />
@@ -143,16 +141,16 @@ const Home = () => {
                         <div className='card_exe py-5 time'>
                             <div className=''>
                                 <div className='text-center'>
-                                    <p className='exer_time text-3xl py-2'>5 May</p>
+                                    <p className='exer_time text-3xl font-bold py-2'>5<sup>th</sup> May</p>
                                     <p className='exer_time text-xl'>6:00 AM</p>
                                 </div>
-                                {/* <p className='time_p'>TIME</p> */}
+                                <p className='time_p'>TIME</p>
                             </div>
                         </div>
                         <div className='card_exe py-5 duration'>
                             <div className=''>
                                 <div className='text-center'>
-                                    <p className='duration_time text-3xl'>2 Hours</p>
+                                    <p className='duration_time font-bold text-3xl'>2 Hours</p>
                                 </div>
                                 <p className='time_p'>DURATION</p>
                             </div>
@@ -187,7 +185,7 @@ const Home = () => {
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={contro} />
                         <span className='date lg:text-base text-sm'>Contribution: Rs: 99</span> </div>
-                    <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
+                    <center><button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button></center>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={calander} />
                         <span className='date lg:text-base text-sm'>High energy and focus</span> </div>
