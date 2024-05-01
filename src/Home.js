@@ -32,6 +32,12 @@ import Programme from './Programme'
 import AboutFaq from './AboutFaq'
 
 const Home = () => {
+    const scrollToRegister = () => {
+        const registerElement = document.getElementById('register-here');
+        if (registerElement) {
+            registerElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     const calculateRemainingTime = (targetDate) => {
         const now = new Date();
@@ -73,7 +79,7 @@ const Home = () => {
                     <div className='grid md:grid-cols-2 '>
                         <div className=''>
                             <p className='font_color font-bold lg:text-4xl md:text-2xl sm:text-4xl stroke-white'>GUT <span className='span_color'>RESET</span> CHALLENGE</p>
-                            <button onClick={() => window.location.href = '#formregister'} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
+                            <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
                             <p className=' text-2xl font-semibold'>Challenge starting in</p>
                             <div className='grid grid-cols-6'>
                                 <div className='flex-cols'>
@@ -147,7 +153,7 @@ const Home = () => {
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={contro} />
                         <span className='date lg:text-base text-sm'>Contribution: Rs: 99</span> </div>
-                    <button onClick={() => window.location.href = '#whatsapp_container'} className='reg_btn lg:w-48 w-36 h-10 rounded-3xl px-4 mt-3 mb-5 lg:text-xl'>Register Now</button>
+                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={calander} />
                         <span className='date lg:text-base text-sm'>High energy and focus</span> </div>
@@ -369,7 +375,7 @@ const Home = () => {
                 <Testimonial />
                 <Programme />
                 <AboutFaq />
-                <Register />
+                <div id='register-here'><Register /></div>
             </div>
         </>
     )

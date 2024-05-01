@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
 import logo from '../Images/logo.svg'
 import { Link } from 'react-router-dom'
 
 const WhatsappLink = () => {
+    const [initialLoad, setInitialLoad] = useState(true);
+
+  useEffect(() => {
+    if (initialLoad) {
+      setInitialLoad(false);
+      window.location.reload();
+    }
+  }, [initialLoad]);
     return (
         <>
             <div className='logo_bg h-20 flex justify-center items-top'>
