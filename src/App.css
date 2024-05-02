@@ -576,11 +576,15 @@
 }
 .hold_register_btn {
     position: fixed;
-    top: 85%;
-    right: 25%;
+    bottom: 0%;
+    right: 1%;
     float: right;
-    background-color: transparent;
+    background-color: #c8c5c5;
+    width: 100%;
     z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .health_challenge {
