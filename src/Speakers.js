@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react'
 import vivek from './Images/vivek.jpg'
 import neeraj from './Images/neeraj.jpg'
+import charu from './Images/charu.jpg'
 // import gurpreet from './Images/gurpreet.jpg'
 import niti from './Images/niti.jpg'
 import meenakshi from './Images/meenakshi.jpg'
@@ -58,6 +59,11 @@ const Speakers = () => {
           image: neeraj,
           name: 'Neeraj Bhatia',
           desc: ' Certified Nutrition and Wellness Advisor-Diploma in Nutrition, Diploma in Diet Planning, Diploma in Weight Loss, Diploma in Fitness, Diploma in Sports Nutrition, Diploma in Keto Dietary Advisor, Diploma in Intermittent Fasting, Diploma in Dietary Supplement Advisor'
+        },
+        {
+          image: charu,
+          name: 'Charu Jain',
+          desc: 'Certified Nutrition and Wellness Advisor, Internationally Accredited Diploma in Weight-Loss, Diploma in Nutrition'
         },
         {
           image: niti,

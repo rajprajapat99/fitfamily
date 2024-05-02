@@ -132,10 +132,18 @@ const Home = () => {
                             </video>
                         </div>
                     </div>
-                    <div className='whatsapp_div'>
+                    {/* <div className='whatsapp_div'>
                         <a href='https://wa.me/+918058900267?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
                             <img alt='whatsapp' src={whatsapp} className='text_whatsapp h-16' />
                         </a>
+                    </div> */}
+
+
+                    <div class='whatsapp_div'>
+                        <a href='https://wa.me/+918058900267?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
+                            <img alt='whatsapp' src={whatsapp} class='text_whatsapp h-16' />
+                        </a>
+                        <div class="ring"></div>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10 mt-10'>
                         <div className='card_exe py-5 time'>
@@ -185,7 +193,7 @@ const Home = () => {
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={contro} />
                         <span className='date lg:text-base text-sm'>Contribution: Rs: 99</span> </div>
-                    <center><button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-9 text-xl'>Register Now</button></center>
+                    <center><button onClick={scrollToRegister} className='zoom-effect reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-5 text-xl'>Register Now</button></center>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={calander} />
                         <span className='date lg:text-base text-sm'>High energy and focus</span> </div>
@@ -338,12 +346,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='sm:mx-14 mx-5 md:w-3/5'>
+                <div className='sm:mx-14 mx-5 mb-10 md:w-3/5'>
                     <center>
                         <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
                     </center>
                 </div>
-                <div className='cover md:mx-20 sm:mx-10 mx-5 my-10 px-4 pt-8 md:w-3/5'>
+                {/* <div className='cover md:mx-20 sm:mx-10 mx-5 my-10 px-4 pt-8 md:w-3/5'>
                     <center className='mb-16'>
                         <h1 className=' text-2xl sm:text-3xl lg:text-4xl underline'>What are the 7 Habits I will Learn ?</h1>
                     </center>
@@ -419,25 +427,10 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className='sm:mx-14 mb-10 mx-5 md:w-3/5'>
-                    <center>
-                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 text-xl'>Register Now</button>
-                    </center>
-                </div>
+                </div> */}
                 <Testimonial />
-                <div className='sm:mx-14 mx-5 md:w-3/5'>
-                    <center>
-                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
-                    </center>
-                </div>
-                <Programme />
-                <div className='sm:mx-14 mx-5 md:w-3/5'>
-                    <center>
-                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 text-xl'>Register Now</button>
-                    </center>
-                </div>
-                <AboutFaq />
+                {/* <Programme /> */}
+                {/* <AboutFaq /> */}
                 <div id='speakers'><Speakers /></div>
                 <div id='register-here'><Register /></div>
             </div>
