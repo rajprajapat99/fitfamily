@@ -434,6 +434,7 @@ const Home = () => {
                 <div id='speakers'><Speakers /></div>
                 <div id='register-here'><Register /></div>
             </div>
+            <div className='footer_section flex justify-center'><p>To know more visit at</p> &nbsp; <a href='https://fitfamilyhitfamily.com'> https://fitfamilyhitfamily.com</a> </div>
         </>
     )
 }

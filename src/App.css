@@ -666,6 +666,14 @@ outline: none;
     color: blue;
     text-decoration: underline;
 }
+.footer_section{
+    position: relative;
+    background-color: #EB0C77;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 0px 20px 0px;
+    z-index: 1;
+}
 
 
 @media only screen and (max-width: 600px) {
