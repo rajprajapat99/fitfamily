@@ -221,7 +221,7 @@ const Home = () => {
                             </div>
                             <div className='belly_text sm:ml-10 ml-5 w-3/4'>
                                 <p className='cover_heading_p sm:text-xl text-base'>Happy Belly Happy Life :</p>
-                                <p className='cover_heading_text sm:text-base text-sm' >How our Gut Health Matters in harbessing your Microbiome for wellness</p>
+                                <p className='cover_heading_text sm:text-base text-sm' >How our Gut Health Matters in harnessing your Microbiome for wellness</p>
                             </div>
                         </div>
                     </div>
