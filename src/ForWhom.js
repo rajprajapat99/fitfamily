@@ -22,7 +22,7 @@ const ForWhom = () => {
                         </div>
                         <div className='programme_content my-auto mx-2'>
                             <p className='professional_heading_p'>For Working Professional</p>
-                            <p className='programme_text'>You live a very busy life and have no time to spend on your health? Well, this workshop is for you. By spending just 60 minutes every morning, you can transform your life!</p>
+                            <p className='programme_text'>You live a very busy life and have no time to spend on your health? Well, this workshop is for you.</p>
                         </div>
                     </div>
                     <div className='housewife_card sm:flex text-center py-3'>
