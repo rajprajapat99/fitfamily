@@ -574,6 +574,14 @@
     background-color: transparent;
     z-index: 0;
 }
+.hold_register_btn {
+    position: fixed;
+    top: 85%;
+    right: 25%;
+    float: right;
+    background-color: transparent;
+    z-index: 0;
+}
 
 .health_challenge {
     text-align: center;

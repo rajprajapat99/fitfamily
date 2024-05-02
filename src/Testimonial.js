@@ -62,7 +62,7 @@ const Testimonial = () => {
                         </svg>
                     </div>
                     <div className='flex justify-center text-center my-auto'>
-                        <p><span className='testimonial_heading md:text-4xl sm:text-2xl text-xl'>People Are Saying</span> <br /> <span className='testimonial_client md:text-lg sm:text-lg text-base'>168,382+ people have already completed the Ultimate Health Challenge</span> </p>
+                        <p><span className='testimonial_heading md:text-4xl sm:text-2xl text-xl'>People are saying </span> <br /> <span className='testimonial_client md:text-lg sm:text-lg text-base'>Listen to people who have already attended and benefitted from this challenge</span> </p>
                     </div>
                     <div className='testimonial_comma_svg mx-auto'>
                         <svg className=" lg:w-40 lg:h-40 md:w-32 md-h-28 w-20" viewBox="0 0 255 238" fill="none" xmlns="http://www.w3.org/2000/svg">

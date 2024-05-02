@@ -131,14 +131,14 @@ const Home = () => {
                                 <source src={gutVideo} type="video/mp4" />
                             </video>
                         </div>
+
+
+                        <div className='hold_register_btn sm:mx-14 mx-5 md:w-3/5  md:hidden block'>
+                            <center>
+                                <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
+                            </center>
+                        </div>
                     </div>
-                    {/* <div className='whatsapp_div'>
-                        <a href='https://wa.me/+918058900267?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
-                            <img alt='whatsapp' src={whatsapp} className='text_whatsapp h-16' />
-                        </a>
-                    </div> */}
-
-
                     <div class='whatsapp_div'>
                         <a href='https://wa.me/+918058900267?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
                             <img alt='whatsapp' src={whatsapp} class='text_whatsapp h-16' />
