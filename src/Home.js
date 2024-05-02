@@ -131,8 +131,10 @@ const Home = () => {
                                 <source src={gutVideo} type="video/mp4" />
                             </video>
                         </div>
-                        <div className='hold_register_btn md:hidden block'>
-                            <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl mb-5'>Register Now</button>
+                        <div className='md:hidden block'>
+                            <div className='hold_register_btn'>
+                                <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl mb-5'>Register Now</button>
+                            </div>
                         </div>
                     </div>
                     <div class='whatsapp_div'>
@@ -201,11 +203,6 @@ const Home = () => {
                         <span className='date lg:text-base text-sm'>Eat and Sleep better</span> </div>
                 </div>
                 <ForWhom />
-                <div className='sm:mx-14 mx-5 md:w-3/5'>
-                    <center>
-                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
-                    </center>
-                </div>
                 <div className='cover mt-10 sm:mx-14 mx-5 md:w-3/5' id='topics-covered'>
                     <center>
                         <h1 className='cover_heading underline mb-10'>Topics Covered</h1>
@@ -265,11 +262,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className='sm:mx-14 mx-5 md:w-3/5'>
-                    <center>
-                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
-                    </center>
                 </div>
                 <div className='logo_bgc h-2 mt-10'></div>
                 <div className=' h-1'></div>
@@ -341,11 +333,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className='sm:mx-14 mx-5 mb-10 md:w-3/5'>
-                    <center>
-                        <button onClick={scrollToRegister} className='reg_btn w-48 h-10 rounded-3xl px-4 mt-10 text-xl'>Register Now</button>
-                    </center>
                 </div>
                 {/* <div className='cover md:mx-20 sm:mx-10 mx-5 my-10 px-4 pt-8 md:w-3/5'>
                     <center className='mb-16'>
