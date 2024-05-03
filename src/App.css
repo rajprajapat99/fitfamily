@@ -741,7 +741,12 @@ outline: none;
     border-radius: 50%;
     animation: expandRing 1s linear infinite;
 }
-
+.ring:hover {
+    animation: none;
+}
+.ring:hover {
+    pointer-events: none;
+}
 @keyframes expandRing {
     0% {
         width: 0;
