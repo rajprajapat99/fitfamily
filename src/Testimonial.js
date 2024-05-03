@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {useEffect, useRef } from "react";
 import Slider from "react-slick";
 import '../node_modules/slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css";
-import testimonials from './Images/testimonials.mp4'
+import testimonials from './Images/testimonial.mp4'
 import star from './Images/Star 4.png'
 import samta from './Images/samta.jpg'
 import yatendra from './Images/yatendra.webp'
