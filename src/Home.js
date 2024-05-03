@@ -138,10 +138,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div class='whatsapp_div'>
-                        <a href='https://wa.me/+918058900267?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://wa.me/+919810133674?text=Your%20message%20here' target='_blank' rel='noopener noreferrer'>
                             <img alt='whatsapp' src={whatsapp} class='text_whatsapp h-16' />
                         </a>
-                        <div class="ring"></div>
+                        {/* <div class="ring"></div> */}
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10 mt-10'>
                         <div className='card_exe py-5 time'>
