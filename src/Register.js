@@ -58,7 +58,7 @@ const Register = () => {
             const script = document.createElement('script');
             script.src = 'https://checkout.razorpay.com/v1/payment-button.js';
             script.async = true;
-            script.setAttribute('data-payment_button_id', 'pl_O1ZlX0NhjA1LUG');
+            script.setAttribute('data-payment_button_id', 'pl_O5uFrSxhyDdWGn');
             document.getElementById('registration-form').appendChild(script);
         }
     }, [showRazorpayButton]);
