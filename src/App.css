@@ -246,9 +246,7 @@
 }
 
 .benefit_mo_img {
-    border-radius: 50%;
-    width: 60%;
-    height: 150px;
+    border-radius: 20px;
 }
 
 .card_mo_text {
