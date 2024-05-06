@@ -70,7 +70,7 @@ const Home = () => {
         };
     };
 
-    const targetDate = new Date('2024-05-03T23:59:59');
+    const targetDate = new Date('2024-05-10T23:59:59');
     const [remainingTime, setRemainingTime] = useState(calculateRemainingTime(targetDate));
 
     useEffect(() => {
@@ -271,7 +271,7 @@ const Home = () => {
                         <p className=' text-white text-2xl sm:text-3xl lg:text-4xl my-5'>Benefits You Will Gain</p>
                         <p className='text-white text-xl sm:text-2xl lg:text-2xl mb-5'>By Taking This Challange</p>
                     </center>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-2/3'>
+                    <div className='sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-2/3  hidden'>
                         <div className='benefit_card w-full'>
                             <div className='benefit_card_content'>
                                 <div className='card_image'>
@@ -329,6 +329,68 @@ const Home = () => {
                                 </div>
                                 <div className='card_content text-center'>
                                     <p className='card_text py-5'>More <br /> Energy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='benefit_card_bg grid grid-cols-2 sm:hidden py-10 w-full md:w-2/3'>
+                        <div className='benefit_mo_card w-full'>
+                            <div className='benefit_mo_card_content'>
+                                <div className='card_mo_image'>
+                                    <img className='benefit_mo_img' alt='craving' src={craving} />
+                                </div>
+                                <div className='card_content text-center'>
+                                    <p className='card_mo_text pb-5'>Craving <br /> Control</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='benefit_mo_card'>
+                            <div className='benefit_mo_card_content'>
+                                <div className='card_mo_image'>
+                                    <img className='benefit_mo_img' alt='craving' src={mental} />
+                                </div>
+                                <div className='card_content text-center'>
+                                    <p className='card_mo_text pb-5'>More Mental <br /> Clarity</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='benefit_mo_card'>
+                            <div className='benefit_mo_card_content'>
+                                <div className='card_mo_image'>
+                                    <img className='benefit_mo_img' alt='craving' src={bloating} />
+                                </div>
+                                <div className='card_content text-center'>
+                                    <p className='card_mo_text pb-5'>Bye Bye <br /> Bloating</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='benefit_mo_card'>
+                            <div className='benefit_mo_card_content'>
+                                <div className='card_mo_image'>
+                                    <img className='benefit_mo_img' alt='craving' src={sleep} />
+                                </div>
+                                <div className='card_content text-center'>
+                                    <p className='card_mo_text pb-5'>Better <br /> Sleep</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='benefit_mo_card'>
+                            <div className='benefit_mo_card_content'>
+                                <div className='card_mo_image'>
+                                    <img className='benefit_mo_img' alt='craving' src={glowing} />
+                                </div>
+                                <div className='card_content text-center'>
+                                    <p className='card_mo_text pb-5'>Glowing & <br /> Clear Skin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='benefit_mo_card'>
+                            <div className='benefit_mo_card_content'>
+                                <div className='card_mo_image'>
+                                    <img className='benefit_mo_img' alt='craving' src={energy} />
+                                </div>
+                                <div className='card_content text-center'>
+                                    <p className='card_mo_text pb-5'>More <br /> Energy</p>
                                 </div>
                             </div>
                         </div>

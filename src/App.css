@@ -199,7 +199,6 @@
     border-radius: 20px;
     padding: 8px;
 }
-
 .benefit_card_content {
     background: linear-gradient(to right, #EF5B23, #EB0C77);
     border-radius: 20px;
@@ -218,6 +217,55 @@
     color: white;
     font-size: 25px;
 }
+
+
+
+
+
+
+
+.benefit_mo_card {
+    /* background-image: linear-gradient(to right, #f76b38, #ea2785); */
+    border-radius: 20px;
+    padding: 8px;
+}
+.benefit_card_bg{
+    background-image: linear-gradient(to right, #f76b38, #ea2785);
+    border-radius: 20px;    
+}
+
+.benefit_mo_card_content {
+    /* background: linear-gradient(to right, #EF5B23, #EB0C77); */
+    border-radius: 20px;
+}
+
+.card_mo_image {
+    display: flex;
+    justify-content: center;
+    /* width: 200px; */
+}
+
+.benefit_mo_img {
+    border-radius: 50%;
+    width: 60%;
+    height: 150px;
+}
+
+.card_mo_text {
+    color: white;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .card_img_one {
     background-image: url(./Images/habit1.jpg);
