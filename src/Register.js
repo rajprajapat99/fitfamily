@@ -39,14 +39,7 @@ const Register = () => {
         };
         axios.post('https://sheet.best/api/sheets/32af17d4-aea8-48a7-9bd1-24b3107e06ea', data)
             .then((response) => {
-                console.log(response.data);
                 setShowRazorpayButton(true);
-                setName('');
-                setEmail('');
-                setWhatsapp('');
-                setCity('');
-                setFromTime('');
-                setToTime('');
             })
             .catch((error) => {
                 console.error('Error while submitting data:', error);
