@@ -40,7 +40,7 @@ const WhatsappLink = () => {
                             <img className='u_turn h-8 w-8 mt-3 ml-3' alt='arrow down' src={uturn} />
                         </div>
                         <div className='w-32 mx-auto'>
-                            <Link to='https://chat.whatsapp.com/Eard00ZH3UHJ6PsG64oUKe' className='text-lg link_whatsapp'>
+                            <Link to='https://chat.whatsapp.com/Cfc9eDOp9FHIEJ50lbj7FR' className='text-lg link_whatsapp'>
                                 <img className='h-24 mx-auto mt-3' alt='whatsappLink' src={whatsapp} />
                             </Link>
                         </div>

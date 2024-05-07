@@ -32,12 +32,12 @@ const Register = () => {
         const data = {
             Name: name,
             Email: email,
-            Whatsapp: whatsapp,
+            Mobile: whatsapp,
             City: city,
             FromTime: fromTime,
             ToTime: toTime
         };
-        axios.post('https://sheet.best/api/sheets/1e4d70a4-7176-4eae-bb2c-6c9ada019d7b', data)
+        axios.post('https://sheet.best/api/sheets/32af17d4-aea8-48a7-9bd1-24b3107e06ea', data)
             .then((response) => {
                 console.log(response.data);
                 setShowRazorpayButton(true);

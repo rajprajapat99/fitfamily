@@ -70,7 +70,7 @@ const Home = () => {
         };
     };
 
-    const targetDate = new Date('2024-05-10T23:59:59');
+    const targetDate = new Date('2024-05-16T23:59:59');
     const [remainingTime, setRemainingTime] = useState(calculateRemainingTime(targetDate));
 
     useEffect(() => {
@@ -147,7 +147,7 @@ const Home = () => {
                         <div className='card_exe py-5 time'>
                             <div className=''>
                                 <div className='text-center'>
-                                    <p className='exer_time text-3xl font-bold py-2'>5<sup>th</sup> May</p>
+                                    <p className='exer_time text-3xl font-bold py-2'>17<sup>th</sup> May</p>
                                     <p className='exer_time text-xl'>6:00 AM</p>
                                 </div>
                                 <p className='time_p'>TIME</p>
@@ -184,13 +184,13 @@ const Home = () => {
                     <div className='health_challenge lg:text-xl text-base'>GUT Health Challenge</div>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={calander} />
-                        <span className='date lg:text-base text-sm'>9th april - to 11th april</span> </div>
+                        <span className='date lg:text-base text-sm'>17th May - to 19th May</span> </div>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={watch} />
-                        <span className='date lg:text-base text-sm'>7:30 PM</span> </div>
+                        <span className='date lg:text-base text-sm'>6:00 AM</span> </div>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={contro} />
-                        <span className='date lg:text-base text-sm'>Contribution: Rs: 99</span> </div>
+                        <span className='date lg:text-base text-sm'>Contribution: Rs: 49</span> </div>
                     <center><button onClick={scrollToRegister} className='zoom-effect reg_btn w-48 h-10 rounded-3xl px-4 mt-5 mb-5 text-xl'>Register Now</button></center>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={calander} />
