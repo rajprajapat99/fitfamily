@@ -49,7 +49,8 @@ const ForWhom = () => {
                         </div>
                         <div className='programme_content my-auto mx-2'>
                             <p className='parent_heading_p'>For Parents</p>
-                            <p className='programme_text'>Not sure how to pass on great health habits to your children? In this challenge, you will learn about simple secrets of health that will improve your full family's health.</p>
+                            <p className='programme_text'>Not sure, how to pass on great Healthy Habits to your children? 
+In this challenge, you will learn about simple secrets that will improve your full family's health.</p>
                         </div>
                     </div>
                     <div className='youth_card sm:flex text-center py-3'>
