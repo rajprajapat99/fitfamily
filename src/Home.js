@@ -148,7 +148,7 @@ const Home = () => {
                             <div className=''>
                                 <div className='text-center'>
                                     <p className='exer_time text-3xl font-bold py-2'>17<sup>th</sup> May</p>
-                                    <p className='exer_time text-xl'>9:00 PM</p>
+                                    <p className='exer_time text-xl'>9:00 PM IST</p>
                                 </div>
                                 <p className='time_p'>TIME</p>
                             </div>
@@ -187,7 +187,7 @@ const Home = () => {
                         <span className='date lg:text-base text-sm'>17th May - to 19th May</span> </div>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={watch} />
-                        <span className='date lg:text-base text-sm'>9:00 PM</span> </div>
+                        <span className='date lg:text-base text-sm'>9:00 PM IST</span> </div>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={contro} />
                         <span className='date lg:text-base text-sm'>Contribution: Rs: 49</span> </div>
