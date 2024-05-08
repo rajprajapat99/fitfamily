@@ -8,9 +8,9 @@ import youth from './Images/youth.png'
 import spiritual from './Images/spiritual.png'
 
 const ForWhom = () => {
-  return (
-    <>
-    <div className='cover sm:mx-16 mx-5 mt-16 px-4 py-10 md:w-3/5'>
+    return (
+        <>
+            <div className='cover sm:mx-16 mx-5 mt-16 px-4 py-10 md:w-3/5'>
                 <center className='programme_heading'>
                     <img className='icon' alt='icon' src={icon} />
                     <p className='programme_for md:text-4xl text-2xl ml-5'>Who is This For ?</p>
@@ -27,7 +27,7 @@ const ForWhom = () => {
                     </div>
                     <div className='housewife_card sm:flex text-center py-3'>
                         <div className='programme_image'>
-                        <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='housewife' src={housewife} />
+                            <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='housewife' src={housewife} />
                         </div>
                         <div className='programme_content my-auto mx-2'>
                             <p className='housewife_heading_p'>For Homemakers</p>
@@ -36,7 +36,7 @@ const ForWhom = () => {
                     </div>
                     <div className='student_card sm:flex text-center py-3'>
                         <div className='programme_image'>
-                        <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='student' src={student} />
+                            <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='student' src={student} />
                         </div>
                         <div className='programme_content my-auto mx-2'>
                             <p className='student_heading_p'>For Students Wanting Better Focus</p>
@@ -45,17 +45,17 @@ const ForWhom = () => {
                     </div>
                     <div className='parent_card sm:flex text-center py-3'>
                         <div className='programme_image'>
-                        <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='parent' src={parent} />
+                            <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='parent' src={parent} />
                         </div>
                         <div className='programme_content my-auto mx-2'>
                             <p className='parent_heading_p'>For Parents</p>
-                            <p className='programme_text'>Not sure, how to pass on great Healthy Habits to your children? 
-In this challenge, you will learn about simple secrets that will improve your full family's health.</p>
+                            <p className='programme_text'>Not sure, how to pass on great Healthy Habits to your children?
+                                In this challenge, you will learn about simple secrets that will improve your full family's health.</p>
                         </div>
                     </div>
                     <div className='youth_card sm:flex text-center py-3'>
                         <div className='programme_image'>
-                        <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='youth' src={youth} />
+                            <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='youth' src={youth} />
                         </div>
                         <div className='programme_content my-auto mx-2'>
                             <p className='youth_heading_p'>For Teenagers & Young Adults</p>
@@ -64,7 +64,7 @@ In this challenge, you will learn about simple secrets that will improve your fu
                     </div>
                     <div className='spiritual_card sm:flex text-center py-3'>
                         <div className='programme_image'>
-                        <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='spiritual' src={spiritual} />
+                            <img className=' sm:h-40 sm:w-72 h-32 mx-auto w-32' alt='spiritual' src={spiritual} />
                         </div>
                         <div className='programme_content my-auto mx-2'>
                             <p className='spiritual_heading_p'>For Spiritual Seekers</p>
@@ -72,9 +72,9 @@ In this challenge, you will learn about simple secrets that will improve your fu
                         </div>
                     </div>
                 </div>
-                </div>
-    </>
-  )
+            </div>
+        </>
+    )
 }
 
 export default ForWhom
