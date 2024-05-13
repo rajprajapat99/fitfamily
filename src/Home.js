@@ -156,7 +156,7 @@ const Home = () => {
                         <div className='card_exe py-5 duration'>
                             <div className=''>
                                 <div className='text-center'>
-                                    <p className='duration_time font-bold text-3xl'>2 Hours</p>
+                                    <p className='duration_time font-bold text-3xl'>45 Minutes</p>
                                 </div>
                                 <p className='time_p'>DURATION</p>
                             </div>
