@@ -156,7 +156,7 @@ const Home = () => {
                         <div className='card_exe py-5 duration'>
                             <div className=''>
                                 <div className='text-center'>
-                                    <p className='duration_time font-bold text-3xl'>45 Minutes</p>
+                                    <p className='duration_time font-bold text-3xl'>45 Minutes Everyday</p>
                                 </div>
                                 <p className='time_p'>DURATION</p>
                             </div>
@@ -184,7 +184,7 @@ const Home = () => {
                     <div className='health_challenge lg:text-xl text-base'>GUT Health Challenge</div>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={calander} />
-                        <span className='date lg:text-base text-sm'>17th May - to 19th May</span> </div>
+                        <span className='date lg:text-base text-sm'>Fri 17th May - to Sun 19th May</span> </div>
                     <div className='icon_date'>
                         <img className='gut_icon' alt='icon' src={watch} />
                         <span className='date lg:text-base text-sm'>9:00 PM IST</span> </div>
